@@ -1,0 +1,309 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.redP {
+    background-color: #ef233c;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #2b2d42;
+}
+
+.calendar_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.calendar_none{
+position: absolute;    
+top: 20px;
+left: 20px;
+font-size: 20px;
+cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.years_wrap,
+.months_wrap {
+    background-color: #edf2f4;
+    width: 100%;
+    padding: 5px 12px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 2px solid #8d99ae;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.close{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 10px;
+    cursor: pointer;
+}
+
+.dates tr {
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* margin-top: 1px; */
+    /* max-width: 100%; */
+
+}
+
+.dates td,
+.dates th {
+    width: 150px;
+    height: 20px;
+    padding: 5px 12px;
+    border: 2px solid #8d99ae;
+    text-align: center;
+}
+
+.time {
+    width: 50px;
+    padding: 5px 12px;
+    font-size: 10px;
+}
+
+
+td.record div{
+    overflow: auto;
+    height: 25px;
+}
+
+td.record{
+    width: 150px;
+    padding: 5px 12px;
+    font-size: 10px;
+}
+
+.month,
+.year {
+    margin: 0 12px;
+    width: 100px;
+}
+
+.year,
+.month {
+    cursor: pointer;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+}
+
+.input_year {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    max-width: 150px;
+    min-width: 150px;
+    text-align: center;
+    padding: 5px 12px;
+    border: 2px solid #8d99ae;
+    outline: none;
+    background-color: #edf2f4;
+}
+
+
+
+.textarea_month {
+    display: none;
+    position: absolute;
+    top: 40px;
+    max-width: 150px;
+    min-width: 150px;
+    max-height: 230px;
+    min-height: 230px;
+    text-align: center;
+    padding: 5px 12px;
+    font-size: 15px;
+    border: 2px solid #8d99ae;
+    cursor: pointer;
+    background-color: #edf2f4;
+}
+
+.input_year_active,
+.textarea_month_active {
+    display: block;
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .calendar_wrap {
+        margin-top: 8.33333333333333vw;
+    }
+
+    .years_wrap,
+    .months_wrap {
+        padding: 0, 833333333333333vw 2vw;
+        margin-bottom: 0.833333333333333vw;
+        border: 0.333333333333333vw solid #8d99ae;
+    }
+
+    .dates tr {
+        margin-top: 0.166666666666667vw;
+    }
+
+    .dates td,
+    .dates th {
+        width: 7.5vw;
+        height: 5.83333333333333vw;
+        padding: 0.833333333333333vw 2vw;
+        border: 0.333333333333333vw solid #8d99ae;
+    }
+
+    .years_wrap,
+    .months_wrap {
+        font-size: 3.33333333333333vw;
+    }
+
+    .month,
+    .year {
+        width: 16,6666666666667vw;
+    }
+
+    .input_year {
+        bottom: 6.66666666666667vw;
+        max-width: 25vw;
+        min-width: 25vw;
+        padding: 0.833333333333333vw 2vw;
+        border: 0.333333333333333vw solid #8d99ae;
+    }
+
+    .textarea_month {
+        top: 6.66666666666667vw;
+        max-width: 25vw;
+        min-width: 25vw;
+        max-height: 38.3333333333333vw;
+        min-height: 38.3333333333333vw;
+        padding: 0.833333333333333vw 2vw;
+        font-size: 2.5vw;
+        border: 0.333333333333333vw solid #8d99ae;
+    }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .calendar_wrap {
+        margin-top: 6.51041666666667vw;
+    }
+
+    .years_wrap,
+    .months_wrap {
+        padding: 0.651041666666667vw 1, 5625vw;
+        margin-bottom: 0.651041666666667vw;
+        border: 0.260416666666667vw solid #8d99ae;
+    }
+
+    .dates tr {
+        margin-top: 0.130208333333333vw;
+    }
+
+    .dates td,
+    .dates th {
+        width: 5.859375vw;
+        height: 4.55729166666667vw;
+        padding: 1.5625vw;
+        border: 0.260416666666667vw solid #8d99ae;
+    }
+
+    .years_wrap,
+    .months_wrap {
+        font-size: 2.60416666666667vw;
+    }
+
+    .month,
+    .year {
+        width: 13,0208333333333vw;
+
+    }
+
+    .input_year {
+        bottom: 5.20833333333333vw;
+        max-width: 19.53125vw;
+        min-width: 19.53125vw;
+        padding: 0.651041666666667vw 1, 5625vw;
+        border: 0.260416666666667vw solid #8d99ae;
+    }
+
+    .textarea_month {
+        top: 5.20833333333333vw;
+        max-width: 19.53125vw;
+        min-width: 19.53125vw;
+        max-height: 29.9479166666667vw;
+        min-height: 29.9479166666667vw;
+        padding: 0.651041666666667vw 1, 5625vw;
+        font-size: 1.953125vw;
+        border: 0.260416666666667vw solid #8d99ae;
+    }
+}
+
+@media (min-width: 7680px) and (max-width: 1023px){
+    .calendar_wrap{
+        margin-top: 4.8828125vw;
+        }
+        .years_wrap, .months_wrap{
+        padding: 0.48828125vw 1.141875vw;
+        margin-bottom: 0.48828125vw;
+        border: 0.1953125vw solid #8d99ae;
+        }
+        .dates tr{
+        margin-top: 0.09765625vw;
+        }
+        .dates td, .dates th {
+        width: 4.39453125vw;
+        height: 3.41796875vw;
+        padding: 1.171875vw;
+        border: 0.1953125vw solid #8d99ae;
+        }
+        .years_wrap, .months_wrap{
+        font-size: 1.953125vw;
+        }
+        .month, .year{
+        width: 9.765625vw;
+        }
+       
+        .input_year{
+        bottom: 3.90625vw;
+        max-width: 14.6484375vw;
+        min-width: 14.6484375vw;
+        padding: 1.171875vw;
+        border: 0.1953125vw solid #8d99ae;
+        }
+        .textarea_month{
+        top: 3.90625vw;
+        max-width: 14.6484375vw;
+        min-width: 14.6484375vw;
+        max-height: 22.4609375vw;
+        min-height: 22.4609375vw;
+        padding: 0.48828125vw 1.141875vw;
+        font-size: 1.46484375vw;
+        border: 0.1953125vw solid #8d99ae;
+        }
+        
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Календарь</title>
+</head>
+
+<body>
+    <div class="calendar_none">
+
+    </div>
+    <div class="calendar_wrap active">
+        <div class="years_wrap">
+            <div class="previous">
+                < </div>
+                    <div class="year"></div>
+                    <div class="next"> > </div>
+                    <input class="input_year" type="text" name="" id="">
+                    <img class="close" src="./png/close.png" alt="close">
+            </div>
+
+            <div class="months_wrap">
+                <div class="previous">
+                    < </div>
+                        <div class="month"></div>
+                        <div class="next"> > </div>
+                        <div class="textarea_month">
+                            <p>Январь</p>
+                            <p>Февраль</p>
+                            <p>Март</p>
+                            <p>Апрель</p>
+                            <p>Май</p>
+                            <p>Июнь</p>
+                            <p>Июль</p>
+                            <p>Август</p>
+                            <p>Сентябрь</p>
+                            <p>Октябрь</p>
+                            <p>Ноябрь</p>
+                            <p>Декабрь</p>
+                        </div>
+                </div>
+                <div class="dates">
+                    <table class="dates_table">
+                        <thead>
+                            <tr class="sdfsd">
+                                <th colspan='2'>пн</th>
+                                <th colspan='2'>вт</th>
+                                <th colspan='2'>ср</th>
+                                <th colspan='2'>чт</th>
+                                <th colspan='2'>пт</th>
+                                <th colspan='2' class="redP">сб</th>
+                                <th colspan='2' class="redP">вс</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table_body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script src="index.js"></script>
+</body>
+
+</html>

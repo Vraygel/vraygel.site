@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: #98f5e1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 70vh;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  color: #006d77;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .container {
+    padding: 0 1.56vw;
+  }
+
+  .slide {
+    border-radius: 1.17vw;
+    margin: 0.39vw;
+  }
+
+  .slide h3 {
+    font-size: 1.88vw;
+    bottom: 1.56vw;
+    left: 1.56vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container {
+    padding: 0 1.95vw;
+  }
+
+  .slide {
+    border-radius: 1.46vw;
+    margin: 0.49vw;
+  }
+
+  .slide h3 {
+    font-size: 2.34vw;
+    bottom: 1.95vw;
+    left: 1.95vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 2.60vw;
+  }
+
+  .slide {
+    border-radius: 1.95vw;
+    margin: 0.65vw;
+  }
+
+  .slide h3 {
+    font-size: 3.13vw;
+    bottom: 2.60vw;
+    left: 2.60vw;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .container {
+    padding: 0 5.56vw;
+  }
+
+  .slide {
+    border-radius: 4.17vw;
+    margin: 1.39vw;
+  }
+
+  .slide h3 {
+    font-size: 6.67vw;
+    bottom: 5.56vw;
+    left: 5.56vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .container {
+    padding: 0 6.25vw;
+  }
+
+  .slide {
+    border-radius: 4.69vw;
+    margin: 1.56vw;
+  }
+
+  .slide h3 {
+    font-size: 7.50vw;
+    bottom: 6.25vw;
+    left: 6.25vw;
+  }
+}

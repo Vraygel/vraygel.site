@@ -1,0 +1,287 @@
+* {
+    font-family: 'Neucha', cursive;
+}
+
+header {
+    text-align: right;
+    padding: 10px;
+}
+
+body {
+
+    width: 70%;
+    margin: 0 auto;
+    background-color: #8eecf5;
+    padding: 10px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.dropbtn {
+    background-color: #56cfe1;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    min-width: 125px;
+    border-radius: 15px;
+    background-color: #4ea8de;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a,
+.dropbtn a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #48bfe3;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    background-color: #5390d9;
+}
+
+@media (min-width: 1366) and (max-width: 1919) {
+    header {
+        padding: 0.73vw;
+    }
+
+    body {
+        padding: 0.73vw;
+    }
+
+    main {
+        margin-top: 3.66vw;
+    }
+
+    .dropbtn {
+        padding: 0.73vw;
+        font-size: 1.02vw;
+        border-radius: 1.10vw;
+    }
+
+    .dropdown-content {
+        min-width: 9.15vw;
+        border-radius: 1.10vw;
+        box-shadow: 0.00vw 0.59vw 1.17vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 0.73vw;
+        font-size: 1.02vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 1.10vw;
+    }
+}
+
+@media (min-width: 1280) and (max-width: 1365) {
+    header {
+        padding: 0.78vw;
+    }
+
+    body {
+        padding: 0.78vw;
+    }
+
+    main {
+        margin-top: 3.91vw;
+    }
+
+    .dropbtn {
+        padding: 0.78vw;
+        font-size: 1.09vw;
+        border-radius: 1.17vw;
+    }
+
+    .dropdown-content {
+        min-width: 9.77vw;
+        border-radius: 1.17vw;
+        box-shadow: 0.00vw 0.63vw 1.25vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 0.78vw;
+        font-size: 1.09vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 1.17vw;
+    }
+}
+
+@media (min-width: 1024) and (max-width: 1279) {
+    header {
+        padding: 0.98vw;
+    }
+
+    body {
+        padding: 0.98vw;
+    }
+
+    main {
+        margin-top: 4.88vw;
+    }
+
+    .dropbtn {
+        padding: 0.98vw;
+        font-size: 1.37vw;
+        border-radius: 1.46vw;
+    }
+
+    .dropdown-content {
+        min-width: 12.21vw;
+        border-radius: 1.46vw;
+        box-shadow: 0.00vw 0.78vw 1.56vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 0.98vw;
+        font-size: 1.37vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 1.46vw;
+    }
+}
+
+@media (min-width: 768) and (max-width: 1023) {
+    header {
+        padding: 1.30vw;
+    }
+
+    body {
+        padding: 1.30vw;
+    }
+
+    main {
+        margin-top: 6.51vw;
+    }
+
+    .dropbtn {
+        padding: 1.30vw;
+        font-size: 1.82vw;
+        border-radius: 1.95vw;
+    }
+
+    .dropdown-content {
+        min-width: 16.28vw;
+        border-radius: 1.95vw;
+        box-shadow: 0.00vw 1.04vw 2.08vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 1.30vw;
+        font-size: 1.82vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 1.95vw;
+    }
+}
+
+@media (min-width: 360) and (max-width: 767) {
+    body {
+        width: 95%;
+    }
+    
+    header {
+        padding: 2.78vw;
+    }
+
+    body {
+        padding: 2.78vw;
+    }
+
+    main {
+        margin-top: 13.89vw;
+    }
+
+    .dropbtn {
+        padding: 2.78vw;
+        font-size: 3.89vw;
+        border-radius: 4.17vw;
+    }
+
+    .dropdown-content {
+        min-width: 34.72vw;
+        border-radius: 4.17vw;
+        box-shadow: 0.00vw 2.22vw 4.44vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 2.78vw;
+        font-size: 3.89vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 4.17vw;
+    }
+}
+
+@media (min-width: 320) and (max-width: 359) {
+    header {
+        padding: 3.13vw;
+    }
+
+    body {
+        padding: 3.13vw;
+    }
+
+    main {
+        margin-top: 15.63vw;
+    }
+
+    .dropbtn {
+        padding: 3.13vw;
+        font-size: 4.38vw;
+        border-radius: 4.69vw;
+    }
+
+    .dropdown-content {
+        min-width: 39.06vw;
+        border-radius: 4.69vw;
+        box-shadow: 0.00vw 2.50vw 5.00vw 0.00vw rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a,
+    .dropbtn a {
+        padding: 3.13vw;
+        font-size: 4.38vw;
+    }
+
+    .dropdown-content a:hover {
+        border-radius: 4.69vw;
+    }
+}

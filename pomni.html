@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" stylesheet" href="pomniCSS.css"">
+    <title>Pomni</title>
+</head>
+<body>
+    <div class="main">
+        <div class="conten_wrapper">
+            <div class="section">
+                <div class="button_wrapper login">
+                    <div>
+                        <button class="login_button">Вход</button>
+                        <button class="registration_button">Регистрация</button>
+                    </div>
+                    <div class="questions_button">
+                        <button class="new_question_button">Добавить</button>
+                        <button class="question_button">Повторять</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="question_wrapper">
+                <div class="index_wrapper active">
+                    <h3>Как работает интервальное повторение?</h3>
+                    <p>Метод основан на использовании феномена памяти, называемом «эффектом интервалов»: как показывают исследования, наш мозг учится более эффективно, когда мы распределяем обучение во времени. По утверждению Пирса Дж. Ховарда, автора книги «Руководство для мозга», работа, задействующая высшие ментальные функции, такие как анализ и синтез, должна выполняться через большие промежутки времени, чтобы позволить закрепиться новым нейронным связям. Иначе, когда не хватает времени, новый материал вытесняет старый.
+
+Поэтому для запоминания новой информации нужно не зазубривать ее, а повторять через определенные возрастающие промежутки времени, именно тогда, когда она почти забыта. Техника рассчитывается по правилу Y= 2X+1, где Y — день, когда информация начинает забываться, а X — день последнего повторения.
+
+                    </p>
+                </div>
+                <div class="login_wrapper none">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="Пароль">
+                        <button type="submit">Войти</button>
+                        <footer>
+                            <p><span class="info"></span><a href="#">Забыли пароль?</a></p>
+                        </footer> 
+                </div>
+                <div class="registration_wrapper none">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="Пароль">
+                    <button type="submit">Регистрация</button>
+
+                </div>
+                <div class="new_question_wrapper none">
+                    <h4>Вопрос</h4>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <h4>Ответ</h4>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="question none">
+                    <p class="question_p">Здесь будет вопрос:</p>
+                    <div class="button_wrapper">
+                        <div><button class="button_question">Ответ</button></div>
+                        <div>
+                            <button class="not_remember">Не помню</button>
+                            <button class="remember">Помню</button>
+                        </div>
+                    </div>  
+                </div>
+                
+                <div class="answer none">
+                    <p class="answer_p">Здесь будет ответ:</p>
+                    <div class="button_wrapper">
+                        <div><button class="button_answer">Вопрос</button></div>
+                        <div>
+                            <button class="not_remember">Не помню</button>
+                            <button class="remember">Помню</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+                
+                
+            
+        </div>
+    </div>
+    <script src="pomniJS.js"></script>    
+</body>
+</html>
