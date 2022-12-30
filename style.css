@@ -30,6 +30,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1{
+    font-size: 4em;
+    line-height: 1.1em;
+}
+
+h2{
+    font-size: 2em;
+}
+
+p, ul{
+    font-size: 20px;
+}
+
+span{
+    color: #FE8F40;
+}
+
 .wrap {
     display: flex;
 }
@@ -92,12 +109,16 @@ a:visited,
 a:active,
 a:hover {
     text-decoration: none;
-    color: #006759;
+    color: #FE8F40;
 }
 
 .header__nav {
     margin-top: 30px;
-    color: #006759;
+    color: #FE8F40;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255),
+        -1px 1px 2px rgb(255, 255, 255),
+        -1px -1px 2px rgb(255, 255, 255),
+        1px -1px 2px rgb(255, 255, 255);
 }
 
 .header__nav li {
@@ -113,7 +134,6 @@ a:hover {
     display: none;
 }
 
-
 .offer img{
     width: 100%;
     margin-top: 1em;
@@ -128,7 +148,7 @@ a:hover {
     font-size: 14px;
     border-bottom: 1px solid #FFCD73;
     padding-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .portfolio__item_img {
@@ -152,10 +172,10 @@ a:hover {
     font-family: 'Roboto', sans-serif;
     margin-top: 20px;
     padding: 8px;
-    font-size: 14px;
+    font-size: 20px;
     border-radius: 8px;
-    border: 1px solid #009F89;
-    background-color: #71FAE7;
+    border: 1px solid #FE8F40;
+    background-color: #009F89;
     cursor: pointer;
 }
 
@@ -175,6 +195,7 @@ a:hover {
 
 .home p {
     font-size: 20px;
+    margin: 2em 0;
 }
 
 .div_button_wrap {
@@ -183,11 +204,17 @@ a:hover {
 
 .div_button {
     padding: 5px;
+    margin: 0;
     text-align: center;
+    /* font-size: 2em; */
     width: 150px;
     cursor: pointer;
     margin-bottom: 10px;
-    border: 1px solid #A66B00;
+    border: 1px solid #FE8F40;
+}
+
+.home .div_button_p{
+margin: 0;
 }
 
 .div_button a:link,
@@ -275,119 +302,9 @@ a:hover {
 .hamburger {
     display: none;
     background-color: #009F89;
+  
 }
 
-@media (min-width: 1280px) and (max-width: 1365px) {
-    body {
-        padding: 0.78vw;
-    }
-
-    .header {
-        min-width: 23.44vw;
-        top: 0.78vw;
-        bottom: 0.78vw;
-        left: 0.78vw;
-        padding: 2.73vw;
-        font-size: 1.09vw;
-    }
-
-    .header__avatar {
-        width: 11.72vw;
-        height: 11.72vw;
-    }
-
-    .main {
-        margin-left: 27.34vw;
-    }
-
-    .header__name {
-        margin-top: 2.34vw;
-    }
-
-    .header__nav {
-        margin-top: 2.34vw;
-    }
-
-    .header__nav li {
-        margin-top: 0.78vw;
-    }
-
-    .portfolio__item {
-        font-size: 1.09vw;
-        border-bottom: 0.08vw solid #FFCD73;
-        padding-bottom: 1.56vw;
-        margin-top: 2.34vw;
-    }
-
-    .portfolio__item_img {
-        border-radius: 0.63vw;
-        margin-left: 1.56vw;
-        width: 15.63vw;
-        height: 15.63vw;
-    }
-
-    .portfolio__item_wrap {
-        margin-top: 1.56vw;
-    }
-
-    .moreDetails {
-        margin-top: 1.56vw;
-        padding: 0.63vw;
-        font-size: 1.09vw;
-        border-radius: 0.63vw;
-        border: 0.08vw solid #009F89;
-    }
-
-    .home {
-        top: 0.78vw;
-        padding-left: 7.81vw;
-        padding-top: 2.73vw;
-        text-shadow: 0.08vw 0.08vw 0.16vw rgb(0 0 0 / 60%);
-        width: calc(60% - 1.56vw);
-    }
-
-    .home p {
-        font-size: 1.56vw;
-    }
-
-    .div_button_wrap {
-        margin-top: 1.56vw;
-    }
-
-    .div_button {
-        padding: 0.39vw;
-        width: 11.72vw;
-        margin-bottom: 0.78vw;
-        border: 0.08vw solid #A66B00;
-    }
-
-    .content_p {
-        margin-top: 2.34vw;
-    }
-
-    .contacts table {
-        margin-top: 1.56vw;
-    }
-
-    .contacts__table td {
-        padding-top: 0.39vw;
-        padding-bottom: 0.39vw;
-        width: 7.03vw;
-    }
-
-    .contacts__table_td {
-        padding-left: 0.78vw;
-    }
-
-    .contacts__table_img {
-        width: 1.56vw;
-        height: 1.56vw;
-    }
-
-    .contacts__table .table_img {
-        width: 2.34vw;
-    }
-}
 
 @media (min-width: 1024px) and (max-width: 1279px) {
     .wrap {
@@ -430,7 +347,7 @@ a:hover {
 
     .portfolio__item {
         font-size: 1.37vw;
-        border-bottom: 0.10vw solid #FFCD73;
+        border-bottom: 0.10vw solid #FE8F40;
         padding-bottom: 1.95vw;
         margin-top: 2.93vw;
     }
@@ -451,7 +368,6 @@ a:hover {
         padding: 0.78vw;
         font-size: 1.37vw;
         border-radius: 0.78vw;
-        border: 0.10vw solid #009F89;
     }
 
     .home {
@@ -474,7 +390,6 @@ a:hover {
         padding: 0.49vw;
         width: 14.65vw;
         margin-bottom: 0.98vw;
-        border: 0.10vw solid #A66B00;
     }
 
     .content_p {
@@ -543,7 +458,7 @@ a:hover {
 
     .portfolio__item {
         font-size: 1.82vw;
-        border-bottom: 0.13vw solid #FFCD73;
+        border-bottom: 0.13vw solid #FE8F40;
         padding-bottom: 2.60vw;
         margin-top: 3.91vw;
     }
@@ -564,7 +479,6 @@ a:hover {
         padding: 1.04vw;
         font-size: 1.82vw;
         border-radius: 1.04vw;
-        border: 0.13vw solid #009F89;
     }
 
     .home {
@@ -587,7 +501,6 @@ a:hover {
         padding: 0.65vw;
         width: 19.53vw;
         margin-bottom: 1.30vw;
-        border: 0.13vw solid #A66B00;
     }
 
     .content_p {
@@ -656,7 +569,7 @@ a:hover {
 
     .portfolio__item {
         font-size: 3.89vw;
-        border-bottom: 0.28vw solid #FFCD73;
+        border-bottom: 0.28vw solid #FE8F40;
         padding-bottom: 5.56vw;
         margin-top: 8.33vw;
     }
@@ -677,7 +590,6 @@ a:hover {
         padding: 2.22vw;
         font-size: 3.89vw;
         border-radius: 2.22vw;
-        border: 0.28vw solid #009F89;
     }
 
     .home {
@@ -699,7 +611,6 @@ a:hover {
         padding: 1.39vw;
         width: 41.67vw;
         margin-bottom: 2.78vw;
-        border: 0.28vw solid #A66B00;
     }
 
     .content_p {
@@ -779,7 +690,7 @@ a:hover {
 
     .portfolio__item {
         font-size: 4.38vw;
-        border-bottom: 0.31vw solid #FFCD73;
+        border-bottom: 0.31vw solid #FE8F40;
         padding-bottom: 6.25vw;
         margin-top: 9.38vw;
     }
@@ -800,7 +711,6 @@ a:hover {
         padding: 2.50vw;
         font-size: 4.38vw;
         border-radius: 2.50vw;
-        border: 0.31vw solid #009F89;
     }
 
     .home {
@@ -822,7 +732,6 @@ a:hover {
         padding: 1.56vw;
         width: 46.88vw;
         margin-bottom: 3.13vw;
-        border: 0.31vw solid #A66B00;
     }
 
     .content_p {
@@ -878,6 +787,7 @@ a:hover {
         left: 0;
         z-index: 10;
         background-color: #009F89;
+        border-bottom: 1px solid #FE8F40;
     }
 
     .header__nav ul {
