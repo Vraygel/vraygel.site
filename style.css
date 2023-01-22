@@ -23,9 +23,11 @@
     box-sizing: border-box;
 }
 
-body {
+.wrap {
+    /* display: flex; */
     width: 1440px;
     margin: 0 auto;
+    background-color: #161616;
 }
 
 header{
@@ -33,6 +35,7 @@ header{
     display: flex;
     background-image: url(./jpg/header_img.png);
     color: aliceblue;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .logo{
@@ -44,11 +47,8 @@ header{
 }
 
 .logo_h1{
-    
     margin-top: 82px;
-    /* font-size: 50px; */
 }
-
 
 .logo_h1 h1:nth-child(1){
     font-family: 'Montserrat';
@@ -111,7 +111,6 @@ padding-bottom: 17px;
 
 }
 
-
 .contacts_item{
     border: 1px solid #FFFFFF;
     padding-top: 30px;
@@ -131,12 +130,38 @@ line-height: 20px;
 vertical-align	: middle;
 }
 
+main{
+    
+    margin-top: 174px;
+}
+
+.nav_item{
+    display: flex;
+    flex-direction: column;
+    width: 258px;
+    margin-left: 140px;
 
 
+}
 
+.nav_item a:link,
+.nav_item a:visited,
+.nav_item a:active,
+.nav_item a:hover {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+text-decoration: none;
+text-align: center;
+color: #FFFFFF;
+border: 1px solid #FFFFFF;
+padding: 31px 61px;
+margin-bottom: 84px;
 
-
-
+}
 
 
 
