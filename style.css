@@ -1,9 +1,8 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(./fonts/roboto/Robotomedium.woff) format('woff');
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat-Medium.ttf) format('woff');
     font-weight: 300;
     font-style: normal;
-    font-display: swap;
 }
 
 .red {
@@ -25,11 +24,151 @@
 }
 
 body {
+    width: 1440px;
     margin: 0 auto;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
 }
 
+header{
+    height: 848px;
+    display: flex;
+    background-image: url(./jpg/header_img.png);
+    color: aliceblue;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-left: 156px;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.logo_h1{
+    
+    margin-top: 82px;
+    /* font-size: 50px; */
+}
+
+
+.logo_h1 h1:nth-child(1){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 37px;
+    margin-bottom: 20px;
+}
+
+.logo_h1 h1:nth-child(2){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+
+.logo_h1 h1:nth-child(3){
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 100;
+font-size: 30px;
+line-height: 37px;
+text-transform: uppercase;
+}
+
+.logo_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.contacts_item{
+    display: flex;
+}
+
+.contacts_item_img{
+    width: 32px;
+}
+
+.contacts{
+    width: 360px;
+    margin-left: 354px;
+    margin-top: 77px;
+}
+
+.contacts_heading{
+    border: 1px solid #FFFFFF;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 37px;
+padding-top: 30px;
+padding-left: 61px;
+padding-bottom: 17px;
+
+}
+
+
+.contacts_item{
+    border: 1px solid #FFFFFF;
+    padding-top: 30px;
+    padding-left: 69px;
+    padding-bottom: 20px;
+}
+
+.contacts_item_a{ 
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 22px;
+line-height: 20px;
+vertical-align	: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 h1 {
     font-size: 40px;
     line-height: 50px;
@@ -884,4 +1023,4 @@ a:hover {
     .header__nav ul.active {
         display: block;
     }
-}
+} */
