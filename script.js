@@ -63,6 +63,7 @@ for (const iterator of contacts_a) {
 
 
 for (const iterator of logo) {
+	console.log(logo);
 	let logoChildren = iterator.children
 	for (const iterator of logoChildren) {
 		iterator.addEventListener('click', () => { // навешиваем событие "клик"

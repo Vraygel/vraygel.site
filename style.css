@@ -251,8 +251,12 @@ text-decoration: none;
     align-items: center;
 }
 
+.section .nav{
+    display: flex;
+    justify-content: center;
+}
+
 .section .nav_item{
-   
     margin: 0;
     
 }
