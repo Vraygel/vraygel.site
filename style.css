@@ -37,6 +37,8 @@ body {
     height: 800px;
     display: none;
     background-image: url(./jpg/header_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     border-bottom: 1px solid #FFFFFF;
 }
 
@@ -203,15 +205,13 @@ body {
 
 footer {
     margin: 0 auto;
-    width: 1440px;
+    width: 100%;
     background-color: #161616;
 }
 
 .offer_item {
-    margin-left: 786px;
     margin-top: 35px;
     text-align: right;
-
 }
 
 .offer_item a:link,
@@ -259,7 +259,6 @@ footer {
     font-size: 66.5px;
     margin-block-start: 0;
     margin-block-end: 0;
-    /* margin-top: 77px; */
     margin-bottom: 150px;
 }
 
@@ -360,4 +359,793 @@ footer {
 
 .active_block {
     display: block;
+}
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .wrap {
+        width: 140.63vw;
+        padding-bottom: 16.11vw;
+    }
+
+    .header {
+        height: 82.81vw;
+        height: 78.13vw;
+        border-bottom: 0.10vw solid #FFFFFF;
+    }
+
+    .logo {
+        margin-top: 7.52vw;
+        margin-left: 15.23vw;
+    }
+
+    .logo_h1 {
+        margin-top: 5.37vw;
+    }
+
+    .logo_h1 h1:nth-child(1) {
+        font-size: 4.88vw;
+        line-height: 3.61vw;
+        margin-bottom: 1.95vw;
+    }
+
+    .logo_h1 h1:nth-child(2) {
+        font-size: 4.88vw;
+        line-height: 3.61vw;
+        margin-bottom: 2.93vw;
+    }
+
+    .logo_h1 h1:nth-child(3) {
+        font-size: 2.93vw;
+        line-height: 3.61vw;
+    }
+
+    .logo_img {
+        width: 29.30vw;
+        height: 29.30vw;
+    }
+
+    .contacts_item_img {
+        width: 3.13vw;
+    }
+
+    .contacts {
+        width: 35.16vw;
+        margin-left: 34.57vw;
+        margin-top: 7.52vw;
+    }
+
+    .contacts_heading {
+        border: 0.10vw solid #FFFFFF;
+        font-size: 2.93vw;
+        line-height: 3.61vw;
+        padding-top: 2.93vw;
+        padding-left: 5.96vw;
+        padding-bottom: 1.66vw;
+    }
+
+    .contacts_item {
+        width: 35.16vw;
+        border: 0.10vw solid #FFFFFF;
+        padding-top: 2.93vw;
+        padding-left: 6.74vw;
+        padding-bottom: 1.95vw;
+    }
+
+    .contacts_item_a {
+        margin-left: 2.93vw;
+        font-size: 2.15vw;
+        line-height: 1.95vw;
+    }
+
+    .index {
+        margin-top: 16.99vw;
+    }
+
+    .nav_item {
+        width: 25.20vw;
+        margin-left: 13.67vw;
+    }
+
+    .header .nav_item {
+        margin-top: 4.88vw;
+    }
+
+    .nav_item a:link,
+    .nav_item a:visited,
+    .nav_item a:active,
+    .nav_item a:hover {
+        font-size: 1.56vw;
+        line-height: 1.95vw;
+        border: 0.10vw solid #FFFFFF;
+        padding: 3.03vw 5.96vw;
+        margin-bottom: 8.20vw;
+    }
+
+    .skills_wrap {
+        margin-left: 21.09vw;
+        width: 66.99vw;
+    }
+
+    .skills_heading {
+        font-size: 2.93vw;
+        line-height: 3.61vw;
+        border: 0.10vw solid #FFFFFF;
+        padding-top: 7.32vw;
+        padding-left: 9.77vw;
+        padding-bottom: 4.88vw;
+    }
+
+    .skills_body {
+        padding-top: 4.88vw;
+        padding-left: 10.35vw;
+        padding-bottom: 7.32vw;
+        border: 0.10vw solid #FFFFFF;
+        font-size: 2.93vw;
+    }
+
+    .offer_item {
+        margin-top: 3.42vw;
+    }
+
+    .offer_item a:link,
+    .offer_item a:visited,
+    .offer_item a:active,
+    .offer_item a:hover {
+        font-size: 2.93vw;
+        line-height: 3.61vw;
+    }
+
+    .wrap_content {
+        padding-top: 4.88vw;
+    }
+
+    .section {
+        width: 48.83vw;
+    }
+
+    .main h1 {
+        font-size: 66.0.49vw;
+        /* margin-top: 7.52vw;
+    */
+        margin-bottom: 14.65vw;
+    }
+
+    .content p {
+        margin-bottom: 9.77vw;
+        font-size: 2.93vw;
+    }
+
+    .content .contacts_content {
+        margin-left: 4.88vw;
+    }
+
+    .contacts_content p {
+        margin-bottom: 9.77vw;
+        font-size: 2.93vw;
+    }
+
+    .contacts_item .contacts_item_a p {
+        font-size: 2.15vw;
+    }
+
+    .portfolio__item {
+        font-size: 1.37vw;
+        border-bottom: 0.10vw solid #FFFFFF;
+        padding-bottom: 1.95vw;
+        margin-top: 4.88vw;
+    }
+
+    .portfolio__item_img {
+        border-radius: 0.78vw;
+        margin-left: 1.95vw;
+        width: 19.53vw;
+        height: 19.53vw;
+    }
+
+    .portfolio__item_wrap {
+        margin-top: 1.95vw;
+    }
+
+    .portfolio__item h2 {
+        font-size: 3.91vw;
+    }
+
+    .moreDetails {
+        font-size: 1.56vw;
+        line-height: 1.95vw;
+        border: 0.10vw solid #FFFFFF;
+        padding: 3.03vw 5.96vw;
+        margin-bottom: 8.20vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrap {
+        width: 187.50vw;
+        padding-bottom: 21.48vw;
+    }
+
+    .header {
+        height: 110.42vw;
+        height: 104.17vw;
+        border-bottom: 0.13vw solid #FFFFFF;
+    }
+
+    .logo {
+        margin-top: 10.03vw;
+        margin-left: 20.31vw;
+    }
+
+    .logo_h1 {
+        margin-top: 7.16vw;
+    }
+
+    .logo_h1 h1:nth-child(1) {
+        font-size: 6.51vw;
+        line-height: 4.82vw;
+        margin-bottom: 2.60vw;
+    }
+
+    .logo_h1 h1:nth-child(2) {
+        font-size: 6.51vw;
+        line-height: 4.82vw;
+        margin-bottom: 3.91vw;
+    }
+
+    .logo_h1 h1:nth-child(3) {
+        font-size: 3.91vw;
+        line-height: 4.82vw;
+    }
+
+    .logo_img {
+        width: 39.06vw;
+        height: 39.06vw;
+    }
+
+    .contacts_item_img {
+        width: 4.17vw;
+    }
+
+    .contacts {
+        width: 46.88vw;
+        margin-left: 46.09vw;
+        margin-top: 10.03vw;
+    }
+
+    .contacts_heading {
+        border: 0.13vw solid #FFFFFF;
+        font-size: 3.91vw;
+        line-height: 4.82vw;
+        padding-top: 3.91vw;
+        padding-left: 7.94vw;
+        padding-bottom: 2.21vw;
+    }
+
+    .contacts_item {
+        width: 46.88vw;
+        border: 0.13vw solid #FFFFFF;
+        padding-top: 3.91vw;
+        padding-left: 8.98vw;
+        padding-bottom: 2.60vw;
+    }
+
+    .contacts_item_a {
+        margin-left: 3.91vw;
+        font-size: 2.86vw;
+        line-height: 2.60vw;
+    }
+
+    .index {
+        margin-top: 22.66vw;
+    }
+
+    .nav_item {
+        width: 33.59vw;
+        margin-left: 18.23vw;
+    }
+
+    .header .nav_item {
+        margin-top: 6.51vw;
+        display: flex;
+    }
+
+    .nav_item a:link,
+    .nav_item a:visited,
+    .nav_item a:active,
+    .nav_item a:hover {
+        font-size: 2.08vw;
+        line-height: 2.60vw;
+        border: 0.13vw solid #FFFFFF;
+        padding: 4.04vw 7.94vw;
+        margin-bottom: 10.94vw;
+    }
+
+    .skills_wrap {
+        margin-left: 28.13vw;
+        width: 89.32vw;
+    }
+
+    .skills_heading {
+        font-size: 3.91vw;
+        line-height: 4.82vw;
+        border: 0.13vw solid #FFFFFF;
+        padding-top: 9.77vw;
+        padding-left: 13.02vw;
+        padding-bottom: 6.51vw;
+    }
+
+    .skills_body {
+        padding-top: 6.51vw;
+        padding-left: 13.80vw;
+        padding-bottom: 9.77vw;
+        border: 0.13vw solid #FFFFFF;
+        font-size: 3.91vw;
+    }
+
+    .offer_item {
+        margin-top: 4.56vw;
+    }
+
+    .offer_item a:link,
+    .offer_item a:visited,
+    .offer_item a:active,
+    .offer_item a:hover {
+        font-size: 3.91vw;
+        line-height: 4.82vw;
+    }
+
+    .wrap_content {
+        padding-top: 6.51vw;
+    }
+
+    .section {
+        width: 65.10vw;
+    }
+
+    .main h1 {
+        font-size: 66.0.65vw;
+        margin-bottom: 19.53vw;
+    }
+
+    .content p {
+        margin-bottom: 13.02vw;
+        font-size: 3.91vw;
+    }
+
+    .content .contacts_content {
+        margin-left: 6.51vw;
+    }
+
+    .contacts_content p {
+        margin-bottom: 13.02vw;
+        font-size: 3.91vw;
+    }
+
+    .contacts_item .contacts_item_a p {
+        font-size: 2.86vw;
+    }
+
+    .portfolio__item {
+        font-size: 1.82vw;
+        border-bottom: 0.13vw solid #FFFFFF;
+        padding-bottom: 2.60vw;
+        margin-top: 6.51vw;
+    }
+
+    .portfolio__item_img {
+        border-radius: 1.04vw;
+        margin-left: 2.60vw;
+        width: 26.04vw;
+        height: 26.04vw;
+    }
+
+    .portfolio__item_wrap {
+        margin-top: 2.60vw;
+    }
+
+    .portfolio__item h2 {
+        font-size: 5.21vw;
+    }
+
+    .moreDetails {
+        font-size: 2.08vw;
+        line-height: 2.60vw;
+        border: 0.13vw solid #FFFFFF;
+        padding: 4.04vw 7.94vw;
+        margin-bottom: 10.94vw;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .wrap {
+        width: 400.00vw;
+        padding-bottom: 45.83vw;
+    }
+
+    .header {
+        height: 235.56vw;
+        height: 222.22vw;
+        border-bottom: 0.28vw solid #FFFFFF;
+    }
+
+    .logo {
+        margin-top: 21.39vw;
+        margin-left: 43.33vw;
+    }
+
+    .logo_h1 {
+        margin-top: 15.28vw;
+    }
+
+    .logo_h1 h1:nth-child(1) {
+        font-size: 13.89vw;
+        line-height: 10.28vw;
+        margin-bottom: 5.56vw;
+    }
+
+    .logo_h1 h1:nth-child(2) {
+        font-size: 13.89vw;
+        line-height: 10.28vw;
+        margin-bottom: 8.33vw;
+    }
+
+    .logo_h1 h1:nth-child(3) {
+        font-size: 8.33vw;
+        line-height: 10.28vw;
+    }
+
+    .logo_img {
+        width: 83.33vw;
+        height: 83.33vw;
+    }
+
+    .contacts_item_img {
+        width: 8.89vw;
+    }
+
+    .contacts {
+        width: 100.00vw;
+        margin-left: 98.33vw;
+        margin-top: 21.39vw;
+    }
+
+    .contacts_heading {
+        border: 0.28vw solid #FFFFFF;
+        font-size: 8.33vw;
+        line-height: 10.28vw;
+        padding-top: 8.33vw;
+        padding-left: 16.94vw;
+        padding-bottom: 4.72vw;
+    }
+
+    .contacts_item {
+        width: 100.00vw;
+        border: 0.28vw solid #FFFFFF;
+        padding-top: 8.33vw;
+        padding-left: 19.17vw;
+        padding-bottom: 5.56vw;
+    }
+
+    .contacts_item_a {
+        margin-left: 8.33vw;
+        font-size: 6.11vw;
+        line-height: 5.56vw;
+    }
+
+    .index {
+        margin-top: 48.33vw;
+    }
+
+    .nav_item {
+        width: 71.67vw;
+        margin-left: 38.89vw;
+    }
+
+    .header .nav_item {
+        margin-top: 13.89vw;
+        */
+    }
+
+    .nav_item a:link,
+    .nav_item a:visited,
+    .nav_item a:active,
+    .nav_item a:hover {
+        font-size: 4.44vw;
+        line-height: 5.56vw;
+        border: 0.28vw solid #FFFFFF;
+        padding: 8.61vw 16.94vw;
+        margin-bottom: 23.33vw;
+    }
+
+    .skills_wrap {
+        margin-left: 60.00vw;
+        width: 190.56vw;
+    }
+
+    .skills_heading {
+        font-size: 8.33vw;
+        line-height: 10.28vw;
+        border: 0.28vw solid #FFFFFF;
+        padding-top: 20.83vw;
+        padding-left: 27.78vw;
+        padding-bottom: 13.89vw;
+    }
+
+    .skills_body {
+        padding-top: 13.89vw;
+        padding-left: 29.44vw;
+        padding-bottom: 20.83vw;
+        border: 0.28vw solid #FFFFFF;
+        font-size: 8.33vw;
+    }
+
+    .offer_item {
+        margin-top: 9.72vw;
+    }
+
+    .offer_item a:link,
+    .offer_item a:visited,
+    .offer_item a:active,
+    .offer_item a:hover {
+        font-size: 8.33vw;
+        line-height: 10.28vw;
+    }
+
+    .wrap_content {
+        padding-top: 13.89vw;
+    }
+
+    .section {
+        width: 138.89vw;
+    }
+
+    .main h1 {
+        font-size: 66.1.39vw;
+        margin-bottom: 41.67vw;
+    }
+
+    .content p {
+        margin-bottom: 27.78vw;
+        font-size: 8.33vw;
+    }
+
+    .content .contacts_content {
+        margin-left: 13.89vw;
+    }
+
+    .contacts_content p {
+        margin-bottom: 27.78vw;
+        font-size: 8.33vw;
+    }
+
+    .contacts_item .contacts_item_a p {
+        font-size: 6.11vw;
+    }
+
+    .portfolio__item {
+        font-size: 3.89vw;
+        border-bottom: 0.28vw solid #FFFFFF;
+        padding-bottom: 5.56vw;
+        margin-top: 13.89vw;
+    }
+
+    .portfolio__item_img {
+        border-radius: 2.22vw;
+        margin-left: 5.56vw;
+        width: 55.56vw;
+        height: 55.56vw;
+    }
+
+    .portfolio__item_wrap {
+        margin-top: 5.56vw;
+    }
+
+    .portfolio__item h2 {
+        font-size: 11.11vw;
+    }
+
+    .moreDetails {
+        font-size: 4.44vw;
+        line-height: 5.56vw;
+        border: 0.28vw solid #FFFFFF;
+        padding: 8.61vw 16.94vw;
+        margin-bottom: 23.33vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    .wrap {
+        width: 450.00vw;
+        padding-bottom: 51.56vw;
+    }
+
+    .header {
+        height: 265.00vw;
+        height: 250.00vw;
+        border-bottom: 0.31vw solid #FFFFFF;
+    }
+
+    .logo {
+        margin-top: 24.06vw;
+        margin-left: 48.75vw;
+    }
+
+    .logo_h1 {
+        margin-top: 17.19vw;
+    }
+
+    .logo_h1 h1:nth-child(1) {
+        font-size: 15.63vw;
+        line-height: 11.56vw;
+        margin-bottom: 6.25vw;
+    }
+
+    .logo_h1 h1:nth-child(2) {
+        font-size: 15.63vw;
+        line-height: 11.56vw;
+        margin-bottom: 9.38vw;
+    }
+
+    .logo_h1 h1:nth-child(3) {
+        font-size: 9.38vw;
+        line-height: 11.56vw;
+    }
+
+    .logo_img {
+        width: 93.75vw;
+        height: 93.75vw;
+    }
+
+    .contacts_item_img {
+        width: 10.00vw;
+    }
+
+    .contacts {
+        width: 112.50vw;
+        margin-left: 110.63vw;
+        margin-top: 24.06vw;
+    }
+
+    .contacts_heading {
+        border: 0.31vw solid #FFFFFF;
+        font-size: 9.38vw;
+        line-height: 11.56vw;
+        padding-top: 9.38vw;
+        padding-left: 19.06vw;
+        padding-bottom: 5.31vw;
+    }
+
+    .contacts_item {
+        width: 112.50vw;
+        border: 0.31vw solid #FFFFFF;
+        padding-top: 9.38vw;
+        padding-left: 21.56vw;
+        padding-bottom: 6.25vw;
+    }
+
+    .contacts_item_a {
+        margin-left: 9.38vw;
+        font-size: 6.88vw;
+        line-height: 6.25vw;
+    }
+
+    .index {
+        margin-top: 54.38vw;
+    }
+
+    .nav_item {
+        width: 80.63vw;
+        margin-left: 43.75vw;
+    }
+
+    .header .nav_item {
+        margin-top: 15.63vw;
+    }
+
+    .nav_item a:link,
+    .nav_item a:visited,
+    .nav_item a:active,
+    .nav_item a:hover {
+        font-size: 5.00vw;
+        line-height: 6.25vw;
+        border: 0.31vw solid #FFFFFF;
+        padding: 9.69vw 19.06vw;
+        margin-bottom: 26.25vw;
+    }
+
+    .skills_wrap {
+        margin-left: 67.50vw;
+        width: 214.38vw;
+    }
+
+    .skills_heading {
+        font-size: 9.38vw;
+        line-height: 11.56vw;
+        border: 0.31vw solid #FFFFFF;
+        padding-top: 23.44vw;
+        padding-left: 31.25vw;
+        padding-bottom: 15.63vw;
+    }
+
+    .skills_body {
+        padding-top: 15.63vw;
+        padding-left: 33.13vw;
+        padding-bottom: 23.44vw;
+        border: 0.31vw solid #FFFFFF;
+        font-size: 9.38vw;
+    }
+
+    .offer_item {
+        margin-top: 10.94vw;
+    }
+
+    .offer_item a:link,
+    .offer_item a:visited,
+    .offer_item a:active,
+    .offer_item a:hover {
+        font-size: 9.38vw;
+        line-height: 11.56vw;
+    }
+
+    .wrap_content {
+        padding-top: 15.63vw;
+    }
+
+    .section {
+        width: 156.25vw;
+    }
+
+    .main h1 {
+        font-size: 66.1.56vw;
+        margin-bottom: 46.88vw;
+    }
+
+    .content p {
+        margin-bottom: 31.25vw;
+        font-size: 9.38vw;
+    }
+
+    .content .contacts_content {
+        margin-left: 15.63vw;
+    }
+
+    .contacts_content p {
+        margin-bottom: 31.25vw;
+        font-size: 9.38vw;
+    }
+
+    .contacts_item .contacts_item_a p {
+        font-size: 6.88vw;
+    }
+
+    .portfolio__item {
+        font-size: 4.38vw;
+        border-bottom: 0.31vw solid #FFFFFF;
+        padding-bottom: 6.25vw;
+        margin-top: 15.63vw;
+    }
+
+    .portfolio__item_img {
+        border-radius: 2.50vw;
+        margin-left: 6.25vw;
+        width: 62.50vw;
+        height: 62.50vw;
+    }
+
+    .portfolio__item_wrap {
+        margin-top: 6.25vw;
+    }
+
+    .portfolio__item h2 {
+        font-size: 12.50vw;
+    }
+
+    .moreDetails {
+        font-size: 5.00vw;
+        line-height: 6.25vw;
+        border: 0.31vw solid #FFFFFF;
+        padding: 9.69vw 19.06vw;
+        margin-bottom: 26.25vw;
+    }
 }
