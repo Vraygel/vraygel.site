@@ -25,7 +25,7 @@ for (const iterator of offer_a) {
 		offer.classList.add('active_block')
 
 		section.classList.add('active_block')
-		header.classList.remove('active_flex')
+		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
 		portfolio.classList.remove('active_block')
 		contacts.classList.remove('active_block')
@@ -39,7 +39,7 @@ for (const iterator of portfolio_a) {
 		portfolio.classList.add('active_block')
 
 		section.classList.add('active_block')
-		header.classList.remove('active_flex')
+		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
 		offer.classList.remove('active_block')
 		contacts.classList.remove('active_block')
@@ -53,7 +53,7 @@ for (const iterator of contacts_a) {
 		contacts.classList.add('active_block')
 
 		section.classList.add('active_block')
-		header.classList.remove('active_flex')
+		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
 		portfolio.classList.remove('active_block')
 		offer.classList.remove('active_block')
@@ -68,7 +68,7 @@ for (const iterator of logo) {
 	for (const iterator of logoChildren) {
 		iterator.addEventListener('click', () => { // навешиваем событие "клик"
 			console.log(iterator);
-			header.classList.add('active_flex')
+			header.classList.add('active_block')
 			index.classList.add('active_flex')
 	
 			contacts.classList.remove('active_block')
