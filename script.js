@@ -20,8 +20,10 @@ let index = document.querySelector('.index') // находим index (конте
 
 
 for (const iterator of offer_a) {
+	
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
+
 		offer.classList.add('active_block')
 
 		section.classList.add('active_block')
@@ -34,6 +36,7 @@ for (const iterator of offer_a) {
 }
 
 for (const iterator of portfolio_a) {
+	
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
 		portfolio.classList.add('active_block')
@@ -48,10 +51,10 @@ for (const iterator of portfolio_a) {
 }
 
 for (const iterator of contacts_a) {
+	
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
 		contacts.classList.add('active_block')
-
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
@@ -61,20 +64,15 @@ for (const iterator of contacts_a) {
 	
 }
 
-
 for (const iterator of logo) {
-	console.log(logo);
 	let logoChildren = iterator.children
 	for (const iterator of logoChildren) {
 		iterator.addEventListener('click', () => { // навешиваем событие "клик"
 			console.log(iterator);
 			header.classList.add('active_block')
 			index.classList.add('active_flex')
-	
 			contacts.classList.remove('active_block')
-	
 			section.classList.remove('active_block')
-			
 			portfolio.classList.remove('active_block')
 			offer.classList.remove('active_block')
 		})

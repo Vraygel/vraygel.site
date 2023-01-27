@@ -153,10 +153,17 @@ body {
     width: 100%;
 }
 
+.nav_item p {
+    cursor: pointer;
+}
+
+
+
 .nav_item a:link,
 .nav_item a:visited,
 .nav_item a:active,
-.nav_item a:hover {
+.nav_item a:hover,
+.nav_item p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
@@ -454,7 +461,8 @@ footer {
     .nav_item a:link,
     .nav_item a:visited,
     .nav_item a:active,
-    .nav_item a:hover {
+    .nav_item a:hover,
+    .nav_item p {
         font-size: 1.56vw;
         line-height: 1.95vw;
         border: 0.10vw solid #FFFFFF;
@@ -653,7 +661,8 @@ footer {
     .nav_item a:link,
     .nav_item a:visited,
     .nav_item a:active,
-    .nav_item a:hover {
+    .nav_item a:hover,
+    .nav_item p {
         font-size: 2.08vw;
         line-height: 2.60vw;
         border: 0.13vw solid #FFFFFF;
@@ -844,13 +853,13 @@ footer {
 
     .header .nav_item {
         margin-top: 13.89vw;
-        */
     }
 
     .nav_item a:link,
     .nav_item a:visited,
     .nav_item a:active,
-    .nav_item a:hover {
+    .nav_item a:hover,
+    .nav_item p {
         font-size: 4.44vw;
         line-height: 5.56vw;
         border: 0.28vw solid #FFFFFF;
@@ -1046,7 +1055,8 @@ footer {
     .nav_item a:link,
     .nav_item a:visited,
     .nav_item a:active,
-    .nav_item a:hover {
+    .nav_item a:hover,
+    .nav_item p {
         font-size: 5.00vw;
         line-height: 6.25vw;
         border: 0.31vw solid #FFFFFF;
