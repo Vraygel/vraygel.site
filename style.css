@@ -19,11 +19,15 @@
     color: #FFFFFF;
 }
 
+html{
+    font-size: 30px;
+}
+
 body {
     background-color: #161616;
 }
 
-p {
+p, h1{
     display: block;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -31,18 +35,17 @@ p {
 
 .wrap {
     display: flex;
-    width: 1440px;
+    width: 48rem;
     margin: 0 auto;
     background-color: #161616;
-    padding-bottom: 165px;
     flex-direction: column;
 }
 
 .header {
-
-    padding-left: 140px;
-    padding-right: 140px;
-    height: 800px;
+    padding-left: 4.667rem;
+    padding-right: 4.667rem;
+    padding-top: 2.567rem;
+    height: 26.667rem;
     display: none;
     background-image: url(./jpg/header_img.png);
     background-repeat: no-repeat;
@@ -50,103 +53,110 @@ p {
     border-bottom: 1px solid #FFFFFF;
 }
 
+.header .nav{
+    /* display: flex; */
+   
+    
+}
+
+.header .nav_item{
+    margin-bottom: 0;
+    height: 7.567rem;
+}
+
 .logo {
-    margin-top: 77px;
-    margin-left: 16px;
+    width: 12.167rem;
+    margin-left: 0.533rem;
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
 .logo_h1 {
-    margin-top: 55px;
+    margin-top: 1.833rem;
+}
+
+.logo_h1 h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 1.233;
 }
 
 .logo_h1 h1:nth-child(1) {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 37px;
+    font-size: 1.333rem;
     margin-bottom: 20px;
 }
 
 .logo_h1 h1:nth-child(2) {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 37px;
-    margin-bottom: 30px;
+    font-size: 1.333rem;
+    margin-bottom: 1rem;
 }
 
 .logo_h1 h1:nth-child(3) {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 100;
-    font-size: 25px;
-    line-height: 37px;
+    font-size: 0.833rem;
     text-transform: uppercase;
 }
 
 .logo_img {
-    width: 250px;
-    height: 250px;
+    width: 8.333rem;
+    height: 8.333rem;
     border-radius: 50%;
 }
 
-.contacts_item_img {
-    width: 32px;
-}
-
 .contacts {
-    width: 360px;
-    margin-top: 77px;
+    width: 12rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
 }
 
 .contacts_heading {
     border: 1px solid #FFFFFF;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 37px;
-    padding-top: 30px;
-    padding-left: 61px;
-    padding-bottom: 17px;
+    font-size: 1rem;
+    line-height: 1.233rem;
+    padding-top: 1rem;
+    padding-left: 2.033rem;
+    padding-bottom: 0.567rem;
 }
 
 .contacts_item {
-    width: 360px;
+    width: 100%;
     border: 1px solid #FFFFFF;
-    padding-top: 30px;
-    padding-left: 69px;
-    padding-bottom: 20px;
+    padding-top: 1rem;
+    padding-left: 2.3rem;
+    padding-bottom: 0.667rem;
     display: flex;
+}
+
+.contacts_item_img {
+    width: 1.067rem;
 }
 
 .contacts_item_a {
     display: flex;
     align-items: center;
-    margin-left: 30px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 20px;
-    vertical-align: middle;
+    margin-left: 1rem;
+    font-size: 0.733rem;
+    line-height: 0.667rem;
+}
+
+.contacts_item .contacts_item_a p {
+    margin-bottom: 0;
 }
 
 .index {
     display: none;
-    margin-top: 174px;
+    margin-top: 5.8rem;
     justify-content: space-between;
 }
 
 .nav_item {
     display: flex;
     flex-direction: column;
-    width: 258px;
+    width: 8.6rem;
 }
 
 .header .nav_item {
@@ -167,58 +177,58 @@ p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 0.533rem;
+    line-height: 0.667rem;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     border: 1px solid #FFFFFF;
-    padding: 31px 61px;
-    margin-bottom: 84px;
+    padding: 1.033rem 2.033rem;
+    margin-bottom: 2.8rem;
 }
 
 .skills_wrap {
-    width: 686px;
+    width: 22.867rem;
 }
 
 .skills_heading {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 1rem;
+    line-height: 1.233rem;
     text-transform: uppercase;
     border: 1px solid #FFFFFF;
-    padding-top: 75px;
-    padding-left: 100px;
-    padding-bottom: 50px;
+    padding-top: 2.5rem;
+    padding-left: 3.333rem;
+    padding-bottom: 1.667rem;
 }
 
 .skills_body {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    padding-left: 106px;
-    padding-bottom: 75px;
+    padding-top: 1.667rem;
+    padding-left: 3.533rem;
+    padding-bottom: 2.5rem;
     border: 1px solid #FFFFFF;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 1rem;
     line-height: 140.4%;
     text-transform: uppercase;
 }
 
 footer {
-    width: 1400px;
-    padding-right: 140px;
+    width: 48rem;
+    padding-right: 4.667rem;
     margin: 0 auto;
     width: 100%;
     background-color: #161616;
 }
 
 .offer_item {
-    margin-top: 35px;
+    margin-top: 1.167rem;
     text-align: right;
 }
 
@@ -229,8 +239,8 @@ footer {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
-    line-height: 37px;
+    font-size: 1rem;
+    line-height: 1.233rem;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -238,13 +248,12 @@ footer {
 .wrap_content {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 2.567rem;
 }
 
 .section .logo {
     display: flex;
     margin: 0;
-    align-items: center;
 }
 
 .section .nav {
@@ -258,15 +267,15 @@ footer {
 
 .main {
     width: 100%;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 4.667rem;
+    padding-right: 4.667rem;
 }
 
 .main h1 {
-    font-size: 66.5px;
+    font-size: 2.2rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 150px;
+    margin-bottom: 5rem;
 }
 
 .offer,
@@ -280,8 +289,8 @@ footer {
     font-family: 'Montserrat';
     margin-block-start: 0;
     margin-block-end: 0;
-    margin-bottom: 100px;
-    font-size: 30px;
+    margin-bottom: 3.333rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 100;
 }
@@ -291,32 +300,27 @@ footer {
 }
 
 .content{
-    margin-left: 50px;
+    margin-left: 1.667rem;
 }
 
 .content .contacts_content {
     margin-top: 0;
-    margin-left: 50px;
+    margin-left: 1.667rem;
 }
 
 
-.contacts_content p {
+/* .contacts_content p {
     font-family: 'Montserrat';
     margin-block-start: 0;
     margin-block-end: 0;
     margin-bottom: 100px;
-    font-size: 30px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 100;
-}
+} */
 
 .content .contacts {
     width: 100%;
-}
-
-.contacts_item .contacts_item_a p {
-    margin-bottom: 0;
-    font-size: 22px;
 }
 
 .portfolio__item {
@@ -327,34 +331,34 @@ footer {
 }
 
 .portfolio__item_img {
-    flex: 1;
-    border-radius: 8px;
-    margin-left: 20px;
-    width: 200px;
-    height: 200px;
+    /* flex: 1; */
+    border-radius: 0.267rem;
+    margin-left: 0.667rem;
+    width: 6.667rem;
+    height: 6.667rem;
 }
 
 .portfolio__item_wrap {
-    margin-top: 20px;
+    margin-top: 0.667rem;
     display: flex;
 }
 
 .portfolio__item h2 {
-    font-size: 40px;
+    font-size: 1.333rem;
 }
 
 .moreDetails {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 0.533rem;
+    line-height: 0.667rem;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     border: 1px solid #FFFFFF;
-    padding: 31px 61px;
-    margin-bottom: 84px;
+    padding: 1.033rem 2.033rem;
+    margin-bottom: 2.8rem;
     background-color: #161616;
     cursor: pointer;
 }
@@ -402,6 +406,7 @@ footer {
 
     .content {
         width: 100%;
+        margin-left: 0;
     }
 
     .skills_wrap {
@@ -410,836 +415,24 @@ footer {
     }
 }
 
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-    .wrap {
-        width: 140.63vw;
-        padding-bottom: 16.11vw;
+@media (min-width: 1024px) and (max-width: 1279px){
+    html{ font-size: 2.93vw;
     }
-
-    .header {
-        padding-left: 13.67vw;
-        padding-right: 13.67vw;
-        height: 78.13vw;
-        border-bottom: 0.10vw solid #FFFFFF;
-    }
-
-    .logo {
-        margin-top: 7.52vw;
-        margin-left: 1.56vw;
-    }
-
-    .logo_h1 {
-        margin-top: 5.37vw;
-    }
-
-    .logo_h1 h1:nth-child(1) {
-        font-size: 3.91vw;
-        line-height: 3.61vw;
-        margin-bottom: 1.95vw;
-    }
-
-    .logo_h1 h1:nth-child(2) {
-        font-size: 3.91vw;
-        line-height: 3.61vw;
-        margin-bottom: 2.93vw;
-    }
-
-    .logo_h1 h1:nth-child(3) {
-        font-size: 2.44vw;
-        line-height: 3.61vw;
-    }
-
-    .logo_img {
-        width: 24.41vw;
-        height: 24.41vw;
-    }
-
-    .contacts_item_img {
-        width: 3.13vw;
-    }
-
-    .contacts {
-        width: 35.16vw;
-        margin-top: 7.52vw;
-    }
-
-    .contacts_heading {
-        border: 0.10vw solid #FFFFFF;
-        font-size: 2.93vw;
-        line-height: 3.61vw;
-        padding-top: 2.93vw;
-        padding-left: 5.96vw;
-        padding-bottom: 1.66vw;
-    }
-
-    .contacts_item {
-        width: 35.16vw;
-        border: 0.10vw solid #FFFFFF;
-        padding-top: 2.93vw;
-        padding-left: 6.74vw;
-        padding-bottom: 1.95vw;
-    }
-
-    .contacts_item_a {
-        margin-left: 2.93vw;
-        font-size: 2.15vw;
-        line-height: 1.95vw;
-    }
-
-    .content {
-        margin-left: 2.93vw;
-    }
-
-    .index {
-        margin-top: 16.99vw;
-    }
-
-    .nav_item {
-        width: 25.20vw;
-    }
-
-    .nav_item a:link,
-    .nav_item a:visited,
-    .nav_item a:active,
-    .nav_item a:hover,
-    .nav_item p {
-        font-size: 1.56vw;
-        line-height: 1.95vw;
-        border: 0.10vw solid #FFFFFF;
-        padding: 3.03vw 5.96vw;
-        margin-bottom: 8.20vw;
-    }
-
-    .skills_wrap {
-        width: 66.99vw;
-    }
-
-    .skills_heading {
-        font-size: 2.93vw;
-        line-height: 3.61vw;
-        border: 0.10vw solid #FFFFFF;
-        padding-top: 7.32vw;
-        padding-left: 9.77vw;
-        padding-bottom: 4.88vw;
-    }
-
-    .skills_body {
-        padding-top: 4.88vw;
-        padding-left: 10.35vw;
-        padding-bottom: 7.32vw;
-        border: 0.10vw solid #FFFFFF;
-        font-size: 2.93vw;
-    }
-
-    footer {
-        width: 136.72vw;
-        padding-right: 13.67vw;
-    }
-
-    .offer_item {
-        margin-top: 3.42vw;
-    }
-
-    .offer_item a:link,
-    .offer_item a:visited,
-    .offer_item a:active,
-    .offer_item a:hover {
-        font-size: 2.93vw;
-        line-height: 3.61vw;
-    }
-
-    .wrap_content {
-        padding-top: 4.88vw;
-    }
-
-    .section .nav {
-        display: flex;
-    }
-
-    .main {
-        padding-left: 13.67vw;
-        padding-right: 13.67vw;
-    }
-
-    .main h1 {
-        font-size: 66.0.49vw;
-        margin-bottom: 14.65vw;
-    }
-
-    .content p {
-        margin-bottom: 9.77vw;
-        font-size: 2.93vw;
-    }
-
-    .content .contacts_content {
-        margin-left: 4.88vw;
-    }
-
-    .contacts_content p {
-        margin-bottom: 9.77vw;
-        font-size: 2.93vw;
-    }
-
-    .contacts_item .contacts_item_a p {
-        font-size: 2.15vw;
-    }
-
-    .portfolio__item {
-        font-size: 1.37vw;
-        border-bottom: 0.10vw solid #FFFFFF;
-        padding-bottom: 1.95vw;
-        margin-top: 4.88vw;
-    }
-
-    .portfolio__item_img {
-        border-radius: 0.78vw;
-        margin-left: 1.95vw;
-        width: 19.53vw;
-        height: 19.53vw;
-    }
-
-    .portfolio__item_wrap {
-        margin-top: 1.95vw;
-    }
-
-    .portfolio__item h2 {
-        font-size: 3.91vw;
-    }
-
-    .moreDetails {
-        font-size: 1.56vw;
-        line-height: 1.95vw;
-        border: 0.10vw solid #FFFFFF;
-        padding: 3.03vw 5.96vw;
-        margin-bottom: 8.20vw;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .header .nav_item {
-        height: 31vw;
-    }
-
-    .wrap {
-        width: 187.50vw;
-        padding-bottom: 21.48vw;
-    }
-
-    .header {
-        padding-left: 18.23vw;
-        padding-right: 18.23vw;
-        height: 104.17vw;
-        border-bottom: 0.13vw solid #FFFFFF;
-    }
-
-    .header .nav .nav_item p,
-    .header .nav .nav_item a {
-        width: 33.59vw;
-        margin-bottom: 0;
     }
     
-    .logo {
-        margin-top: 10.03vw;
-        margin-left: 2.08vw;
+    @media (min-width: 768px) and (max-width: 1023px){
+    html{ font-size: 3.91vw;
     }
-
-    .logo_h1 {
-        margin-top: 7.16vw;
-    }
-
-    .logo_h1 h1:nth-child(1) {
-        font-size: 5.21vw;
-        line-height: 4.82vw;
-        margin-bottom: 2.60vw;
-    }
-
-    .logo_h1 h1:nth-child(2) {
-        font-size: 5.21vw;
-        line-height: 4.82vw;
-        margin-bottom: 3.91vw;
-    }
-
-    .logo_h1 h1:nth-child(3) {
-        font-size: 3.26vw;
-        line-height: 4.82vw;
-    }
-
-    .logo_img {
-        width: 32.55vw;
-        height: 32.55vw;
-    }
-
-    .contacts_item_img {
-        width: 4.17vw;
-    }
-
-    .contacts {
-        width: 46.88vw;
-        margin-top: 10.03vw;
-    }
-
-    .contacts_heading {
-        border: 0.13vw solid #FFFFFF;
-        font-size: 3.91vw;
-        line-height: 4.82vw;
-        padding-top: 3.91vw;
-        padding-left: 7.94vw;
-        padding-bottom: 2.21vw;
-    }
-
-    .contacts_item {
-        width: 46.88vw;
-        border: 0.13vw solid #FFFFFF;
-        padding-top: 3.91vw;
-        padding-left: 8.98vw;
-        padding-bottom: 2.60vw;
-    }
-
-    .contacts_item_a {
-        margin-left: 3.91vw;
-        font-size: 2.86vw;
-        line-height: 2.60vw;
-    }
-
-    .index {
-        margin-top: 22.66vw;
-    }
-
-    .nav_item {
-        width: 33.59vw;
-    }
-
-    .nav_item a:link,
-    .nav_item a:visited,
-    .nav_item a:active,
-    .nav_item a:hover,
-    .nav_item p {
-        font-size: 2.08vw;
-        line-height: 2.60vw;
-        border: 0.13vw solid #FFFFFF;
-        padding: 4.04vw 7.94vw;
-        margin-bottom: 10.94vw;
-    }
-
-    .skills_wrap {
-        width: 89.32vw;
-    }
-
-    .skills_heading {
-        font-size: 3.91vw;
-        line-height: 4.82vw;
-        border: 0.13vw solid #FFFFFF;
-        padding-top: 9.77vw;
-        padding-left: 13.02vw;
-        padding-bottom: 6.51vw;
-    }
-
-    .skills_body {
-        padding-top: 6.51vw;
-        padding-left: 13.80vw;
-        padding-bottom: 9.77vw;
-        border: 0.13vw solid #FFFFFF;
-        font-size: 3.91vw;
-    }
-
-    footer {
-        width: 182.29vw;
-        padding-right: 18.23vw;
-    }
-
-    .offer_item {
-        margin-top: 4.56vw;
-    }
-
-    .offer_item a:link,
-    .offer_item a:visited,
-    .offer_item a:active,
-    .offer_item a:hover {
-        font-size: 3.91vw;
-        line-height: 4.82vw;
-    }
-
-    .wrap_content {
-        padding-top: 6.51vw;
-    }
-
-    .section .nav {
-        display: flex;
-    }
-
-    .main {
-        padding-left: 18.23vw;
-        padding-right: 18.23vw;
-    }
-
-    .main h1 {
-        font-size: 66.0.65vw;
-        margin-bottom: 19.53vw;
-    }
-
-    .content p {
-        margin-bottom: 13.02vw;
-        font-size: 3.91vw;
-    }
-
-    .content .contacts_content {
-        margin-left: 6.51vw;
-    }
-
-    .contacts_content p {
-        margin-bottom: 13.02vw;
-        font-size: 3.91vw;
-    }
-
-    .contacts_item .contacts_item_a p {
-        font-size: 2.86vw;
-    }
-
-    .portfolio__item {
-        font-size: 1.82vw;
-        border-bottom: 0.13vw solid #FFFFFF;
-        padding-bottom: 2.60vw;
-        margin-top: 6.51vw;
-    }
-
-    .portfolio__item_img {
-        border-radius: 1.04vw;
-        margin-left: 2.60vw;
-        width: 26.04vw;
-        height: 26.04vw;
-    }
-
-    .portfolio__item_wrap {
-        margin-top: 2.60vw;
-    }
-
-    .portfolio__item h2 {
-        font-size: 5.21vw;
-    }
-
-    .moreDetails {
-        font-size: 2.08vw;
-        line-height: 2.60vw;
-        border: 0.13vw solid #FFFFFF;
-        padding: 4.04vw 7.94vw;
-        margin-bottom: 10.94vw;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 767px) {
-    .header .nav_item {
-        height: 67vw;
-    }
-    .wrap {
-        width: 400.00vw;
-        padding-bottom: 45.83vw;
-    }
-
-    .header {
-        padding-left: 38.89vw;
-        padding-right: 38.89vw;
-        height: 222.22vw;
-        border-bottom: 0.28vw solid #FFFFFF;
-    }
-
-    .header .nav .nav_item p,
-    .header .nav .nav_item a {
-        width: 71.67vw;
-        margin-bottom: 0;
     }
     
-    .logo {
-        margin-top: 21.39vw;
-        margin-left: 4.44vw;
+    @media (min-width: 360px) and (max-width: 767px){
+    html{ font-size: 5.33vw;
     }
-
-    .logo_h1 {
-        margin-top: 15.28vw;
-    }
-
-    .logo_h1 h1:nth-child(1) {
-        font-size: 11.11vw;
-        line-height: 10.28vw;
-        margin-bottom: 5.56vw;
-    }
-
-    .logo_h1 h1:nth-child(2) {
-        font-size: 11.11vw;
-        line-height: 10.28vw;
-        margin-bottom: 8.33vw;
-    }
-
-    .logo_h1 h1:nth-child(3) {
-        font-size: 6.94vw;
-        line-height: 10.28vw;
-    }
-
-    .logo_img {
-        width: 69.44vw;
-        height: 69.44vw;
-    }
-
-    .contacts_item_img {
-        width: 8.89vw;
-    }
-
-    .contacts {
-        width: 100.00vw;
-        margin-top: 21.39vw;
-    }
-
-    .contacts_heading {
-        border: 0.28vw solid #FFFFFF;
-        font-size: 8.33vw;
-        line-height: 10.28vw;
-        padding-top: 8.33vw;
-        padding-left: 16.94vw;
-        padding-bottom: 4.72vw;
-    }
-
-    .contacts_item {
-        width: 100.00vw;
-        border: 0.28vw solid #FFFFFF;
-        padding-top: 8.33vw;
-        padding-left: 19.17vw;
-        padding-bottom: 5.56vw;
-    }
-
-    .contacts_item_a {
-        margin-left: 8.33vw;
-        font-size: 6.11vw;
-        line-height: 5.56vw;
-    }
-
-    .index {
-        margin-top: 48.33vw;
-    }
-
-    .nav_item {
-        width: 71.67vw;
-    }
-
-    .nav_item a:link,
-    .nav_item a:visited,
-    .nav_item a:active,
-    .nav_item a:hover,
-    .nav_item p {
-        font-size: 4.44vw;
-        line-height: 5.56vw;
-        border: 0.28vw solid #FFFFFF;
-        padding: 8.61vw 16.94vw;
-        margin-bottom: 23.33vw;
-    }
-
-    .skills_wrap {
-        width: 190.56vw;
-    }
-
-    .skills_heading {
-        font-size: 8.33vw;
-        line-height: 10.28vw;
-        border: 0.28vw solid #FFFFFF;
-        padding-top: 20.83vw;
-        padding-left: 27.78vw;
-        padding-bottom: 13.89vw;
-    }
-
-    .skills_body {
-        padding-top: 13.89vw;
-        padding-left: 29.44vw;
-        padding-bottom: 20.83vw;
-        border: 0.28vw solid #FFFFFF;
-        font-size: 8.33vw;
-    }
-
-    footer {
-        width: 388.89vw;
-        padding-right: 38.89vw;
-    }
-
-    .offer_item {
-        margin-top: 9.72vw;
-    }
-
-    .offer_item a:link,
-    .offer_item a:visited,
-    .offer_item a:active,
-    .offer_item a:hover {
-        font-size: 8.33vw;
-        line-height: 10.28vw;
-    }
-
-    .wrap_content {
-        padding-top: 13.89vw;
-    }
-
-    .section .nav {
-        display: flex;
-    }
-
-    .main {
-        padding-left: 38.89vw;
-        padding-right: 38.89vw;
-    }
-
-    .main h1 {
-        font-size: 66.1.39vw;
-        margin-bottom: 41.67vw;
-    }
-
-    .content p {
-        margin-bottom: 27.78vw;
-        font-size: 8.33vw;
-    }
-
-    .content .contacts_content {
-        margin-left: 13.89vw;
-    }
-
-    .contacts_content p {
-        margin-bottom: 27.78vw;
-        font-size: 8.33vw;
-    }
-
-    .contacts_item .contacts_item_a p {
-        font-size: 6.11vw;
-    }
-
-    .portfolio__item {
-        font-size: 3.89vw;
-        border-bottom: 0.28vw solid #FFFFFF;
-        padding-bottom: 5.56vw;
-        margin-top: 13.89vw;
-    }
-
-    .portfolio__item_img {
-        border-radius: 2.22vw;
-        margin-left: 5.56vw;
-        width: 55.56vw;
-        height: 55.56vw;
-    }
-
-    .portfolio__item_wrap {
-        margin-top: 5.56vw;
-    }
-
-    .portfolio__item h2 {
-        font-size: 11.11vw;
-    }
-
-    .moreDetails {
-        font-size: 4.44vw;
-        line-height: 5.56vw;
-        border: 0.28vw solid #FFFFFF;
-        padding: 8.61vw 16.94vw;
-        margin-bottom: 23.33vw;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 359px) {
-    .wrap {
-        width: 450.00vw;
-        padding-bottom: 51.56vw;
-    }
-
-    .header {
-        padding-left: 43.75vw;
-        padding-right: 43.75vw;
-        height: 250.00vw;
-        border-bottom: 0.31vw solid #FFFFFF;
-    }
-
-    .header .nav .nav_item p,
-    .header .nav .nav_item a {
-        width: 80.63vw;
-        margin-bottom: 0;
     }
     
-    .logo {
-        margin-top: 24.06vw;
-        margin-left: 5.00vw;
+    @media (max-width: 359px){
+    html{ font-size: 8.38vw;
+    }
     }
 
-    .logo_h1 {
-        margin-top: 17.19vw;
-    }
-
-    .logo_h1 h1:nth-child(1) {
-        font-size: 12.50vw;
-        line-height: 11.56vw;
-        margin-bottom: 6.25vw;
-    }
-
-    .logo_h1 h1:nth-child(2) {
-        font-size: 12.50vw;
-        line-height: 11.56vw;
-        margin-bottom: 9.38vw;
-    }
-
-    .logo_h1 h1:nth-child(3) {
-        font-size: 7.81vw;
-        line-height: 11.56vw;
-    }
-
-    .logo_img {
-        width: 78.13vw;
-        height: 78.13vw;
-    }
-
-    .contacts_item_img {
-        width: 10.00vw;
-    }
-
-    .contacts {
-        width: 112.50vw;
-        margin-top: 24.06vw;
-    }
-
-    .contacts_heading {
-        border: 0.31vw solid #FFFFFF;
-        font-size: 9.38vw;
-        line-height: 11.56vw;
-        padding-top: 9.38vw;
-        padding-left: 19.06vw;
-        padding-bottom: 5.31vw;
-    }
-
-    .contacts_item {
-        width: 112.50vw;
-        border: 0.31vw solid #FFFFFF;
-        padding-top: 9.38vw;
-        padding-left: 21.56vw;
-        padding-bottom: 6.25vw;
-    }
-
-    .contacts_item_a {
-        margin-left: 9.38vw;
-        font-size: 6.88vw;
-        line-height: 6.25vw;
-    }
-
-    .index {
-        margin-top: 54.38vw;
-    }
-
-    .nav_item {
-        width: 80.63vw;
-    }
-
-    .nav_item a:link,
-    .nav_item a:visited,
-    .nav_item a:active,
-    .nav_item a:hover,
-    .nav_item p {
-        font-size: 5.00vw;
-        line-height: 6.25vw;
-        border: 0.31vw solid #FFFFFF;
-        padding: 9.69vw 19.06vw;
-        margin-bottom: 26.25vw;
-    }
-
-    .skills_wrap {
-        width: 214.38vw;
-    }
-
-    .skills_heading {
-        font-size: 9.38vw;
-        line-height: 11.56vw;
-        border: 0.31vw solid #FFFFFF;
-        padding-top: 23.44vw;
-        padding-left: 31.25vw;
-        padding-bottom: 15.63vw;
-    }
-
-    .skills_body {
-        padding-top: 15.63vw;
-        padding-left: 33.13vw;
-        padding-bottom: 23.44vw;
-        border: 0.31vw solid #FFFFFF;
-        font-size: 9.38vw;
-    }
-
-    footer {
-        width: 437.50vw;
-        padding-right: 43.75vw;
-    }
-
-    .offer_item {
-        margin-top: 10.94vw;
-    }
-
-    .offer_item a:link,
-    .offer_item a:visited,
-    .offer_item a:active,
-    .offer_item a:hover {
-        font-size: 9.38vw;
-        line-height: 11.56vw;
-    }
-
-    .wrap_content {
-        padding-top: 15.63vw;
-    }
-
-    .section .nav {
-        display: flex;
-    }
-
-    .main {
-        padding-left: 43.75vw;
-        padding-right: 43.75vw;
-    }
-
-    .main h1 {
-        font-size: 66.1.56vw;
-        margin-bottom: 46.88vw;
-    }
-
-    .content p {
-        margin-bottom: 31.25vw;
-        font-size: 9.38vw;
-    }
-
-    .content .contacts_content {
-        margin-left: 15.63vw;
-    }
-
-    .contacts_content p {
-        margin-bottom: 31.25vw;
-        font-size: 9.38vw;
-    }
-
-    .contacts_item .contacts_item_a p {
-        font-size: 6.88vw;
-    }
-
-    .portfolio__item {
-        font-size: 4.38vw;
-        border-bottom: 0.31vw solid #FFFFFF;
-        padding-bottom: 6.25vw;
-        margin-top: 15.63vw;
-    }
-
-    .portfolio__item_img {
-        border-radius: 2.50vw;
-        margin-left: 6.25vw;
-        width: 62.50vw;
-        height: 62.50vw;
-    }
-
-    .portfolio__item_wrap {
-        margin-top: 6.25vw;
-    }
-
-    .portfolio__item h2 {
-        font-size: 12.50vw;
-    }
-
-    .moreDetails {
-        font-size: 5.00vw;
-        line-height: 6.25vw;
-        border: 0.31vw solid #FFFFFF;
-        padding: 9.69vw 19.06vw;
-        margin-bottom: 26.25vw;
-    }
-}
+   
