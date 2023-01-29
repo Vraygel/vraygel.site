@@ -389,15 +389,15 @@ footer {
     display: block;
 }
 
-.active_block p{
+.content .active_block_p{
     display: block;
 }
 
 
 
-/* .active_block img{
+.content .active_block_img{
     display: block;
-} */
+}
 
 @media (max-width: 1439px) {
 

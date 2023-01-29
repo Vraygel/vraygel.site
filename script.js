@@ -23,7 +23,6 @@ let index = document.querySelector('.index') // находим index (конте
 
 for (const iterator of offer_a) {
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
-		console.log(iterator);
 		offer.classList.add('active_block')
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
@@ -31,13 +30,13 @@ for (const iterator of offer_a) {
 		portfolio.classList.remove('active_block')
 		contacts.classList.remove('active_block')
 		window.scrollTo(0, 0)
+		addActiveClass()
 	})
 }
 
 for (const iterator of portfolio_a) {
 
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
-		console.log(iterator);
 		portfolio.classList.add('active_block')
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
@@ -45,12 +44,12 @@ for (const iterator of portfolio_a) {
 		offer.classList.remove('active_block')
 		contacts.classList.remove('active_block')
 		window.scrollTo(0, 0)
+		addActiveClass()
 	})
 }
 
 for (const iterator of contacts_a) {
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
-		console.log(iterator);
 		contacts.classList.add('active_block')
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
@@ -58,6 +57,7 @@ for (const iterator of contacts_a) {
 		portfolio.classList.remove('active_block')
 		offer.classList.remove('active_block')
 		window.scrollTo(0, 0)
+		addActiveClass()
 	})
 }
 
@@ -65,7 +65,6 @@ for (const iterator of logo) {
 	let logoChildren = iterator.children
 	for (const iterator of logoChildren) {
 		iterator.addEventListener('click', () => { // навешиваем событие "клик"
-			console.log(iterator);
 			header.classList.add('active_block')
 			index.classList.add('active_flex')
 			contacts.classList.remove('active_block')
@@ -121,12 +120,12 @@ let p = content.querySelectorAll('p')
 let img = content.querySelectorAll('img')
 
 const viewportHeight = window.innerHeight
+console.log(viewportHeight);
 window.addEventListener('scroll', () => {
 
 for (const iterator of nav) {
 		// console.log(window.innerHeight); 
 		if (iterator.getBoundingClientRect().bottom <= viewportHeight - 250) {
-			console.log(iterator.getBoundingClientRect().bottom);
 			up.classList.add('active_block')
 		} else{
 			up.classList.remove('active_block')
@@ -137,13 +136,18 @@ for (const iterator of nav) {
 
 
 	for (const iterator of p) {
+console.log(iterator.getBoundingClientRect().top);
+
 
 		if (iterator.getBoundingClientRect().top < viewportHeight) {
+			if (iterator.classList.contains('active_block_p')) {
+				continue
+			}
 
 			iterator.classList.add('bounceInLeft')
 			iterator.classList.add('animated')
 			iterator.classList.add('faster')
-			iterator.classList.add('active_block')
+			iterator.classList.add('active_block_p')
 		}
 
 		if (iterator.getBoundingClientRect().top > viewportHeight) {
@@ -151,18 +155,22 @@ for (const iterator of nav) {
 			iterator.classList.remove('bounceInLeft')
 			iterator.classList.remove('animated')
 			iterator.classList.remove('faster')
-			iterator.classList.remove('active_block')
+			iterator.classList.remove('active_block_p')
 
 		}
 	}
 	for (const iterator of img) {
+		
 
 		if (iterator.getBoundingClientRect().top < viewportHeight) {
+			if (iterator.classList.contains('active_block_img')) {
+				continue
+			}
 
 			iterator.classList.add('bounceInLeft')
 			iterator.classList.add('animated')
 			iterator.classList.add('faster')
-			iterator.classList.add('active_block')
+			iterator.classList.add('active_block_img')
 		}
 
 		if (iterator.getBoundingClientRect().top > viewportHeight) {
@@ -170,14 +178,18 @@ for (const iterator of nav) {
 			iterator.classList.remove('bounceInLeft')
 			iterator.classList.remove('animated')
 			iterator.classList.remove('faster')
-			iterator.classList.remove('active_block')
+			iterator.classList.remove('active_block_img')
 
 		}
 	}
 
 })
 
-addActiveClass()
+up.addEventListener('click', () => {
+	window.scrollTo(0, 0)
+}) 
+
+
 
 function addActiveClass() {
 	
@@ -185,18 +197,20 @@ function addActiveClass() {
 console.log(viewportHeight);
 
 for (const iterator of p) {
-	console.log (iterator.getBoundingClientRect().top)
+	iterator.classList.remove('active_block_p')
 
 	if (iterator.getBoundingClientRect().top < viewportHeight) {
-		iterator.classList.add('active_block')
+		iterator.classList.add('active_block_p')
 
 	}
 }
 
 
 for (const iterator of img) {
+
+	iterator.classList.remove('active_block_img')
 	if (iterator.getBoundingClientRect().top < viewportHeight) {
-		iterator.classList.add('active_block')
+		iterator.classList.add('active_block_img')
 
 	}
 }
