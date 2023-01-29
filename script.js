@@ -2,9 +2,10 @@
 let offer_a = document.querySelectorAll('.offer_a') // находим кнопки "предложение"
 let contacts_a = document.querySelectorAll('.contacts_a') // находим кнопки "контакты"
 let portfolio_a = document.querySelectorAll('.portfolio_a') // находим кнопки "портфолио"
+let animated = document.querySelector('.animated')
+let span = document.querySelectorAll('span')
 
-
-
+let content = document.querySelector('.content')
 
 let offer = document.querySelector('.offer') // находим страницу "предложение"
 let contacts = document.querySelector('.contacts_content') // находим страницу "Контакты"
@@ -12,46 +13,39 @@ let portfolio = document.querySelector('.portfolio') // находим стра�
 let section = document.querySelector('.section') // находим блок "section"
 let logo = document.querySelectorAll('.logo')// находим все дочерние элементы блока logo
 
-
-
-
 let header = document.querySelector('.header') // находим header
 let index = document.querySelector('.index') // находим index (контент главной страницы)
 
 
+
 for (const iterator of offer_a) {
-	
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
-
 		offer.classList.add('active_block')
-
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
 		portfolio.classList.remove('active_block')
 		contacts.classList.remove('active_block')
+		window.scrollTo(0, 0)
 	})
-	
 }
 
 for (const iterator of portfolio_a) {
-	
+
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
 		portfolio.classList.add('active_block')
-
 		section.classList.add('active_block')
 		header.classList.remove('active_block')
 		index.classList.remove('active_flex')
 		offer.classList.remove('active_block')
 		contacts.classList.remove('active_block')
+		window.scrollTo(0, 0)
 	})
-	
 }
 
 for (const iterator of contacts_a) {
-	
 	iterator.addEventListener('click', () => { // навешиваем событие "клик"
 		console.log(iterator);
 		contacts.classList.add('active_block')
@@ -60,8 +54,8 @@ for (const iterator of contacts_a) {
 		index.classList.remove('active_flex')
 		portfolio.classList.remove('active_block')
 		offer.classList.remove('active_block')
+		window.scrollTo(0, 0)
 	})
-	
 }
 
 for (const iterator of logo) {
@@ -75,36 +69,137 @@ for (const iterator of logo) {
 			section.classList.remove('active_block')
 			portfolio.classList.remove('active_block')
 			offer.classList.remove('active_block')
+			window.scrollTo(0, 0)
 		})
-		
+	}
+}
+
+window.addEventListener('resize', () => {
+	if (document.documentElement.clientWidth < 1023) {
+		animated.classList.add('bounceInLeft')
+		animated.classList.add('delay-2s')
+		animated.classList.add('faster')
+
+	}
+	if (document.documentElement.clientWidth > 1023) {
+		animated.classList.remove('bounceInLeft')
+		animated.classList.remove('delay-2s')
+		animated.classList.remove('faster')
+	}
+}, true);
+
+window.addEventListener('load', () => {
+	let i = 0
+	for (const iterator of span) {
+		iterator.style.display = 'block'
+
+		iterator.classList.add('fadeInUp')
+		iterator.classList.add(`delay-${i}s`)
+		iterator.classList.add('faster')
+		iterator.classList.add('animated')
+		i = i + 1
+	}
+
+	if (document.documentElement.clientWidth < 1023) {
+		animated.classList.add('bounceInLeft')
+		animated.classList.add('delay-2s')
+		animated.classList.add('faster')
+
+	}
+	if (document.documentElement.clientWidth > 1023) {
+		animated.classList.remove('bounceInLeft')
+		animated.classList.remove('delay-2s')
+		animated.classList.remove('faster')
+
+	}
+})
+
+let p = content.querySelectorAll('p')
+let img = content.querySelectorAll('img')
+
+const viewportHeight = window.innerHeight
+window.addEventListener('scroll', () => {
+
+	// console.log(window.innerHeight); 
+
+
+	for (const iterator of p) {
+
+		if (iterator.getBoundingClientRect().top < viewportHeight) {
+
+			iterator.classList.add('bounceInLeft')
+			iterator.classList.add('animated')
+			iterator.classList.add('faster')
+			iterator.classList.add('active_block')
+		}
+
+		if (iterator.getBoundingClientRect().top > viewportHeight) {
+
+			iterator.classList.remove('bounceInLeft')
+			iterator.classList.remove('animated')
+			iterator.classList.remove('faster')
+			iterator.classList.remove('active_block')
+
+		}
+	}
+	for (const iterator of img) {
+
+		if (iterator.getBoundingClientRect().top < viewportHeight) {
+
+			iterator.classList.add('bounceInLeft')
+			iterator.classList.add('animated')
+			iterator.classList.add('faster')
+			iterator.classList.add('active_block')
+		}
+
+		if (iterator.getBoundingClientRect().top > viewportHeight) {
+
+			iterator.classList.remove('bounceInLeft')
+			iterator.classList.remove('animated')
+			iterator.classList.remove('faster')
+			iterator.classList.remove('active_block')
+
+		}
+	}
+
+
+
+
+
+
+
+
+
+})
+
+addActiveClass()
+
+function addActiveClass() {
+	
+
+console.log(viewportHeight);
+
+for (const iterator of p) {
+	console.log (iterator.getBoundingClientRect().top)
+
+	if (iterator.getBoundingClientRect().top < viewportHeight) {
+		iterator.classList.add('active_block')
+
+	}
+}
+
+
+for (const iterator of img) {
+	if (iterator.getBoundingClientRect().top < viewportHeight) {
+		iterator.classList.add('active_block')
+
 	}
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

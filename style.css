@@ -17,25 +17,36 @@
     margin: 0;
     box-sizing: border-box;
     color: #FFFFFF;
+    /* outline: solid red; */
 }
 
-html{
+html {
     font-size: 30px;
 }
 
 body {
     background-color: #161616;
+    width: 48rem;
+    margin: 0 auto;
 }
 
-p, h1{
-    display: block;
+p,
+h1 {
     margin-block-start: 0;
     margin-block-end: 0;
 }
 
+.content p {
+    display: none;
+}
+
+
+span {
+    display: none;
+}
+
 .wrap {
     display: flex;
-    width: 48rem;
     margin: 0 auto;
     background-color: #161616;
     flex-direction: column;
@@ -53,13 +64,7 @@ p, h1{
     border-bottom: 1px solid #FFFFFF;
 }
 
-.header .nav{
-    /* display: flex; */
-   
-    
-}
-
-.header .nav_item{
+.header .nav_item {
     margin-bottom: 0;
     height: 7.567rem;
 }
@@ -76,7 +81,7 @@ p, h1{
     margin-top: 1.833rem;
 }
 
-.logo_h1 h1{
+.logo_h1 h1 {
     font-family: 'Montserrat';
     font-style: normal;
     line-height: 1.233;
@@ -125,7 +130,7 @@ p, h1{
 .contacts_item {
     width: 100%;
     border: 1px solid #FFFFFF;
-    padding-top: 1rem;
+    padding-top: 0.677rem;
     padding-left: 2.3rem;
     padding-bottom: 0.667rem;
     display: flex;
@@ -145,6 +150,11 @@ p, h1{
 
 .contacts_item .contacts_item_a p {
     margin-bottom: 0;
+}
+
+.contacts_item .contacts_item_a a {
+    margin-bottom: 0;
+    text-decoration: none;
 }
 
 .index {
@@ -199,7 +209,7 @@ p, h1{
     line-height: 1.233rem;
     text-transform: uppercase;
     border: 1px solid #FFFFFF;
-    padding-top: 2.5rem;
+    padding-top: 1.667rem;
     padding-left: 3.333rem;
     padding-bottom: 1.667rem;
 }
@@ -224,6 +234,7 @@ footer {
     padding-right: 4.667rem;
     margin: 0 auto;
     width: 100%;
+    margin-bottom: 5.433rem;
     background-color: #161616;
 }
 
@@ -258,7 +269,6 @@ footer {
 
 .section .nav {
     display: flex;
-
 }
 
 .section .nav_item {
@@ -299,7 +309,7 @@ footer {
     width: 100%;
 }
 
-.content{
+.content {
     margin-left: 1.667rem;
 }
 
@@ -307,17 +317,6 @@ footer {
     margin-top: 0;
     margin-left: 1.667rem;
 }
-
-
-/* .contacts_content p {
-    font-family: 'Montserrat';
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-bottom: 100px;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 100;
-} */
 
 .content .contacts {
     width: 100%;
@@ -377,7 +376,37 @@ footer {
     display: block;
 }
 
+.active_block p{
+    display: block;
+}
+
+/* .active_block img{
+    display: block;
+} */
+
+@media (max-width: 1439px) {
+
+    body {
+        width: 100%;
+    }
+}
+
+
 @media (max-width: 1023px) {
+    .wrap {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #161616;
+        flex-direction: column;
+    }
+
+    .header {
+        padding-left: 1.167rem;
+        padding-right: 1.167rem;
+        padding-top: 1.167rem;
+    }
+
     .header .nav_item {
         display: flex;
         justify-content: space-between;
@@ -397,11 +426,18 @@ footer {
     .header .nav .nav_item p,
     .header .nav .nav_item a {
         margin-bottom: 0;
+        width: 7rem;
+        padding: 1.033rem 1.033rem
     }
 
     .main,
     footer {
-        padding: 5vw;
+        padding-left: 1.167rem;
+        padding-right: 1.167rem;
+    }
+
+    .wrap_content {
+        padding-top: 1.167rem;
     }
 
     .content {
@@ -413,26 +449,71 @@ footer {
         margin-left: 0;
         margin: 0 auto;
     }
+
+    .main h1 {
+        margin-bottom: 3rem;
+    }
+
+    .content p {
+        margin-bottom: 2rem;
+    }
+
+    .index {
+        margin-top: 1.167rem;
+    }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px){
-    html{ font-size: 2.93vw;
-    }
-    }
-    
-    @media (min-width: 768px) and (max-width: 1023px){
-    html{ font-size: 3.91vw;
-    }
-    }
-    
-    @media (min-width: 360px) and (max-width: 767px){
-    html{ font-size: 5.33vw;
-    }
-    }
-    
-    @media (max-width: 359px){
-    html{ font-size: 8.38vw;
-    }
+@media (min-width: 1024px) and (max-width: 1279px) {
+    html {
+        font-size: 2.93vw;
     }
 
-   
+    .main {
+        padding-left: 2.333rem;
+        padding-right: 2.333rem;
+    }
+
+    .header {
+        padding-left: 2.333rem;
+        padding-right: 2.333rem;
+        padding-top: 2.333rem;
+    }
+
+    .skills_wrap {
+        width: 17.867rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contacts_heading,
+    .contacts_item {
+        padding-left: 0.5rem;
+    }
+
+    .header {
+        height: 23.667rem;
+    }
+
+    .header .nav_item {
+        height: 4.1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        font-size: 3.91vw;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    html {
+        font-size: 4.33vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+    html {
+        font-size: 4.38vw;
+    }
+}
