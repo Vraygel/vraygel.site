@@ -362,6 +362,20 @@ footer {
     cursor: pointer;
 }
 
+
+.up{
+    width: 8.6rem;
+    position: fixed;
+    bottom: 4.667rem;;
+    left: 4.667rem;;
+    display: none;
+
+}
+
+.up p{
+   margin-bottom: 0;
+}
+
 .wrap_logo {
     width: 100%;
     display: flex;
@@ -379,6 +393,8 @@ footer {
 .active_block p{
     display: block;
 }
+
+
 
 /* .active_block img{
     display: block;

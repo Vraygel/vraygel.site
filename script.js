@@ -4,6 +4,9 @@ let contacts_a = document.querySelectorAll('.contacts_a') // находим кн
 let portfolio_a = document.querySelectorAll('.portfolio_a') // находим кнопки "портфолио"
 let animated = document.querySelector('.animated')
 let span = document.querySelectorAll('span')
+let nav = document.querySelectorAll('.nav')
+
+let up = document.querySelector('.up')
 
 let content = document.querySelector('.content')
 
@@ -120,7 +123,17 @@ let img = content.querySelectorAll('img')
 const viewportHeight = window.innerHeight
 window.addEventListener('scroll', () => {
 
-	// console.log(window.innerHeight); 
+for (const iterator of nav) {
+		// console.log(window.innerHeight); 
+		if (iterator.getBoundingClientRect().bottom <= viewportHeight - 250) {
+			console.log(iterator.getBoundingClientRect().bottom);
+			up.classList.add('active_block')
+		} else{
+			up.classList.remove('active_block')
+		}
+	
+}
+
 
 
 	for (const iterator of p) {
@@ -161,14 +174,6 @@ window.addEventListener('scroll', () => {
 
 		}
 	}
-
-
-
-
-
-
-
-
 
 })
 
