@@ -7,8 +7,8 @@ for (let i = 0; i < squares_number; i++){
     const square = document.createElement('div')
     square.classList.add('square')
 
-    square.addEventListener('mouseover', () => setColor(square))
-    square.addEventListener('mouseleave', () => removeColor(square))
+    square.addEventListener('pointermove', () => setColor(square))
+    square.addEventListener('pointerleave', () => removeColor(square))
     board.append(square)
 }
 

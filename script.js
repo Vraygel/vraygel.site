@@ -120,7 +120,6 @@ let p = content.querySelectorAll('p')
 let img = content.querySelectorAll('img')
 
 const viewportHeight = window.innerHeight
-console.log(viewportHeight);
 window.addEventListener('scroll', () => {
 
 for (const iterator of nav) {
@@ -136,10 +135,9 @@ for (const iterator of nav) {
 
 
 	for (const iterator of p) {
-console.log(iterator.getBoundingClientRect().top);
-
 
 		if (iterator.getBoundingClientRect().top < viewportHeight) {
+
 			if (iterator.classList.contains('active_block_p')) {
 				continue
 			}
@@ -161,8 +159,8 @@ console.log(iterator.getBoundingClientRect().top);
 	}
 	for (const iterator of img) {
 		
-
 		if (iterator.getBoundingClientRect().top < viewportHeight) {
+
 			if (iterator.classList.contains('active_block_img')) {
 				continue
 			}
@@ -194,9 +192,8 @@ up.addEventListener('click', () => {
 function addActiveClass() {
 	
 
-console.log(viewportHeight);
-
 for (const iterator of p) {
+
 	iterator.classList.remove('active_block_p')
 
 	if (iterator.getBoundingClientRect().top < viewportHeight) {
@@ -209,6 +206,7 @@ for (const iterator of p) {
 for (const iterator of img) {
 
 	iterator.classList.remove('active_block_img')
+
 	if (iterator.getBoundingClientRect().top < viewportHeight) {
 		iterator.classList.add('active_block_img')
 
