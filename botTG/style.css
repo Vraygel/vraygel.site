@@ -1,0 +1,39 @@
+
+
+
+.wrap{
+
+    width: 500px;
+    margin: 50px auto;
+}
+
+.form_tg{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.input_tg{
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input_tg:nth-child(even){
+margin-left: 10px;
+}
+
+.input_tg:nth-child(3){
+    margin-top: 10px;
+    }
+
+    .input_tg:nth-child(4){
+        margin-top: 10px;
+        }
+    
+.bat{
+    margin-top: 20px;
+
+}
