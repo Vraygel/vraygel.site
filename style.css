@@ -25,6 +25,7 @@ html {
 }
 
 body {
+    /* font-family: 'Montserrat'; */
     background-color: #161616;
     width: 48rem;
     margin: 0 auto;
@@ -82,7 +83,7 @@ span {
 }
 
 .logo_h1 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Semibold';
     font-style: normal;
     line-height: 1.233;
 }
@@ -194,7 +195,7 @@ span {
     text-align: center;
     border: 1px solid #FFFFFF;
     padding: 1.033rem 2.033rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2rem;
 }
 
 .skills_wrap {
@@ -257,6 +258,7 @@ footer {
 }
 
 .wrap_content {
+    font-family: 'Semibold';
     display: flex;
     justify-content: space-between;
     padding-top: 2.567rem;
