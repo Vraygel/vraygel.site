@@ -132,54 +132,52 @@ for (const iterator of nav) {
 	
 }
 
+	// for (const iterator of p) {
 
+	// 	if (iterator.getBoundingClientRect().top < viewportHeight) {
 
-	for (const iterator of p) {
+	// 		if (iterator.classList.contains('active_block_p')) {
+	// 			continue
+	// 		}
 
-		if (iterator.getBoundingClientRect().top < viewportHeight) {
+	// 		iterator.classList.add('bounceInLeft')
+	// 		iterator.classList.add('animated')
+	// 		iterator.classList.add('faster')
+	// 		iterator.classList.add('active_block_p')
+	// 	}
 
-			if (iterator.classList.contains('active_block_p')) {
-				continue
-			}
+	// 	if (iterator.getBoundingClientRect().top > viewportHeight) {
 
-			iterator.classList.add('bounceInLeft')
-			iterator.classList.add('animated')
-			iterator.classList.add('faster')
-			iterator.classList.add('active_block_p')
-		}
+	// 		iterator.classList.remove('bounceInLeft')
+	// 		iterator.classList.remove('animated')
+	// 		iterator.classList.remove('faster')
+	// 		iterator.classList.remove('active_block_p')
 
-		if (iterator.getBoundingClientRect().top > viewportHeight) {
-
-			iterator.classList.remove('bounceInLeft')
-			iterator.classList.remove('animated')
-			iterator.classList.remove('faster')
-			iterator.classList.remove('active_block_p')
-
-		}
-	}
-	for (const iterator of img) {
+	// 	}
+	// }
+	// for (const iterator of img) {
 		
-		if (iterator.getBoundingClientRect().top < viewportHeight) {
+	// 	if (iterator.getBoundingClientRect().top < viewportHeight) {
 
-			if (iterator.classList.contains('active_block_img')) {
-				continue
-			}
+	// 		if (iterator.classList.contains('active_block_img')) {
+	// 			continue
+	// 		}
 
-			iterator.classList.add('bounceInLeft')
-			iterator.classList.add('animated')
-			iterator.classList.add('faster')
-			iterator.classList.add('active_block_img')
-		}
+	// 		iterator.classList.add('bounceInLeft')
+	// 		iterator.classList.add('animated')
+	// 		iterator.classList.add('faster')
+	// 		iterator.classList.add('active_block_img')
+	// 	}
 
-		if (iterator.getBoundingClientRect().top > viewportHeight) {
+	// 	if (iterator.getBoundingClientRect().top > viewportHeight) {
 
-			iterator.classList.remove('bounceInLeft')
-			iterator.classList.remove('animated')
-			iterator.classList.remove('faster')
-			iterator.classList.remove('active_block_img')
+	// 		iterator.classList.remove('bounceInLeft')
+	// 		iterator.classList.remove('animated')
+	// 		iterator.classList.remove('faster')
+	// 		iterator.classList.remove('active_block_img')
 
-		}
-	}
+	// 	}
+	// }
 
 })
 
@@ -304,3 +302,9 @@ for (const iterator of img) {
 // 		contacts.classList.add('active')
 // 	})
 // }
+
+
+function randomInteger(min, max) { // случайное число от min до (max+1)
+	let rand = min + Math.random() * (max + 1 - min)
+	return Math.floor(rand)
+}

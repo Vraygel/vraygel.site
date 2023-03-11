@@ -109,7 +109,7 @@ span {
 .logo_img {
     width: 8.333rem;
     height: 8.333rem;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .contacts {
